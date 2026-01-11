@@ -20,7 +20,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <img
             className="rounded-lg shadow-lg w-full"
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+            src="D:\Pankaj-Kumar-1995.github.io\images\1753167961966.png"
             alt="Business analysis collaboration"
           />
 
