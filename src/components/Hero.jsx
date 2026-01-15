@@ -28,9 +28,8 @@ export default function Hero() {
           </motion.p>
 
           <p className="text-gray-700 mb-8 max-w-xl">
-            Master of Business Information Technology (RMIT) graduate with 3.5+ years
-            of experience across software delivery, testing, and business analysis.
-            I translate business needs into clear requirements, data specs, and delivery-ready documentation.
+            I transform complex business challenges into clear, data-driven solutions. With expertise in process optimization and analytics, 
+            I help organizations make better decisions and achieve measurable results.
           </p>
 
           <div className="flex flex-wrap gap-3">
