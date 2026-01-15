@@ -63,8 +63,8 @@ export default function Hero() {
             <div className="absolute inset-0 rounded-full translate-x-4 translate-y-4 bg-blue-100" />
             <img
               className="relative z-10 w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white shadow-lg"
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
-              alt="Professional headshot placeholder"
+              src="/profile.png"
+              alt="Pankaj Kumar"
             />
           </div>
         </div>
