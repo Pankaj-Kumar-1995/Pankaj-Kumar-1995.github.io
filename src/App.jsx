@@ -1,22 +1,19 @@
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import ProjectDetails from "./pages/ProjectDetails";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
     <div className="font-sans text-gray-800">
       <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Skills />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/:slug" element={<ProjectDetails />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
     </div>
   );

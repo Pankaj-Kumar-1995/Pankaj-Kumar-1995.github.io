@@ -52,7 +52,7 @@ export default function Contact() {
                 <div>
                   <div className="font-medium">LinkedIn</div>
                   <div className="text-gray-700">{CONFIG.linkedin}</div>
-                  <div className="text-xs text-gray-500 mt-1">Replace with your real LinkedIn link.</div>
+                  <div className="text-xs text-gray-500 mt-1">www.linkedin.com/in/pankaj-kumar-9a764a175</div>
                 </div>
               </div>
 
