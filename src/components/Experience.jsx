@@ -21,15 +21,33 @@ export default function Experience() {
                 style={{ backgroundColor: "var(--accent)" }}
               />
 
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-2">
-                  <h3 className="text-xl font-bold">{job.role}</h3>
-                  <span className="text-sm font-medium px-3 py-1 rounded-full bg-blue-100 text-blue-800">
-                    {job.period}
-                  </span>
+              <div className="bg-white p-6 rounded-lg shadow-md flex gap-4">
+                {/* Logo on the left */}
+                <div className="flex-shrink-0">
+                  {job.logo ? (
+                    <img 
+                      src={`/${job.logo}`} 
+                      alt={job.company} 
+                      className="h-20 w-20 object-contain"
+                    />
+                  ) : (
+                    <div className="h-20 w-20 bg-gray-200 rounded flex items-center justify-center text-gray-400">
+                      Logo
+                    </div>
+                  )}
                 </div>
-                <h4 className="text-gray-600 font-medium mb-3">{job.company}</h4>
-                <p className="text-gray-700">{job.description}</p>
+
+                {/* Content on the right */}
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-2">
+                    <h3 className="text-xl font-bold">{job.role}</h3>
+                    <span className="text-sm font-medium px-3 py-1 rounded-full bg-blue-100 text-blue-800">
+                      {job.period}
+                    </span>
+                  </div>
+                  <h4 className="text-gray-600 font-medium mb-3">{job.company}</h4>
+                  <p className="text-gray-700">{job.description}</p>
+                </div>
               </div>
             </div>
           ))}

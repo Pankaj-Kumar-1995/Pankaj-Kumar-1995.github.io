@@ -43,10 +43,7 @@ export default function About() {
               ))}
             </div>
 
-            <div className="p-4 rounded-lg border bg-white inline-flex items-center gap-2">
-              <MapPin size={18} style={{ color: "var(--accent)" }} />
-              <span className="text-gray-700">{CONFIG.location}</span>
-            </div>
+
           </div>
         </div>
       </div>
