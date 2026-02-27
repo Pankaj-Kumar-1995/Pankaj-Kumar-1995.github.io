@@ -65,13 +65,3 @@ export default function Contact() {
     </section>
   );
 }
-                  <span>Your message has been sent successfully!</span>
-                </div>
-              )}
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
