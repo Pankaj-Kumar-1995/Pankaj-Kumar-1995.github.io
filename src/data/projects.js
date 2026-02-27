@@ -9,7 +9,7 @@ export const projects = [
     description:
       "Forecasted non-emergency service demand using machine learning and clustering techniques to support city resource planning.",
     tools: ["Python", "Azure ML", "LSTM", "DBSCAN", "Power BI"],
-    coverImage: "/nyc311-cover.png",
+    coverImage: "/images/projects/nyc311-cover.jpg",
     duration: "6 months",
     teamSize: "8 members",
     role: "Business Analyst / Data Requirements Specialist",
@@ -38,7 +38,7 @@ export const projects = [
       brd: {
         title: "Business Requirements Document",
         description: "Detailed business requirements including stakeholder needs, success criteria, and scope",
-        downloadUrl: "/docs/nyc311-brd.html",
+        downloadUrl: "/docs/nyc311-project-doc.pdf",
         available: true
       },
       frd: {
@@ -162,8 +162,8 @@ export const projects = [
     ],
 
     screenshots: [
-      "/nyc311-dashboard.png",
-      "/nyc311-forecast.png"
+      "/images/projects/nyc311-dashboard.png",
+      "/images/projects/nyc311-forecast.png"
     ]
   },
 
@@ -175,7 +175,7 @@ export const projects = [
     description:
       "Designed BA artefacts and AI solution concept using Microsoft Copilot to streamline student support workflows.",
     tools: ["Requirements", "User Journeys", "Responsible AI"],
-    coverImage: "/rmit-cover.png",
+    coverImage: "/images/projects/rmit-cover.jpg",
     duration: "3 months",
     teamSize: "5 members",
     role: "Business Analyst / AI Solution Designer",
@@ -330,7 +330,7 @@ export const projects = [
     description:
       "Analysed ERP transformation scope, risks, stakeholders, and expected benefits in a retail context.",
     tools: ["ERP", "Process Mapping", "Risk Analysis"],
-    coverImage: "/coles-cover.png",
+    coverImage: "/images/projects/coles-cover.jpg",
     duration: "8 weeks",
     teamSize: "3 members",
     role: "Business Analyst / ERP Strategy Analyst",
@@ -358,7 +358,7 @@ export const projects = [
       brd: {
         title: "Business Case & Strategy Document",
         description: "ERP transformation business case, financial analysis, benefits realization",
-        downloadUrl: "/docs/coles-brd.html",
+        downloadUrl: "/docs/coles-project-doc.pdf",
         available: true
       },
       frd: {

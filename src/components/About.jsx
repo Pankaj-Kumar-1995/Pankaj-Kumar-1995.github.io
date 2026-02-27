@@ -24,7 +24,7 @@ export default function About() {
           <div className="flex justify-center">
             <img
               className="rounded-lg shadow-lg w-full max-w-md"
-              src="/BA_Skills.png"
+              src="/images/about/BA_Skills.png"
               alt="Business analysis collaboration"
             />
           </div>

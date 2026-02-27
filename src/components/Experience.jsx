@@ -26,7 +26,7 @@ export default function Experience() {
                 <div className="flex-shrink-0">
                   {job.logo ? (
                     <img 
-                      src={`/${job.logo}`} 
+                      src={`/images/experience/${job.logo}`} 
                       alt={job.company} 
                       className="h-20 w-20 object-contain"
                     />
