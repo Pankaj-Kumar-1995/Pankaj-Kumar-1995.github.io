@@ -23,9 +23,9 @@ export default function About() {
           {/* Left side - Image */}
           <div className="flex justify-center">
             <img
-              className="rounded-lg shadow-lg w-full max-w-md"
-              src="/images/about/BA_Skills.png"
-              alt="Business analysis collaboration"
+              className="rounded-lg shadow-lg w-full max-w-md object-cover"
+              src="/images/about/profile.png"
+              alt="Pankaj Kumar - Business Analyst"
             />
           </div>
 
