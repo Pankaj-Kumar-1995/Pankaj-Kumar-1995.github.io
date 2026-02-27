@@ -475,6 +475,224 @@ export const projects = [
       "Approved budget: $120M for 5-year program"
     ]
   },
+
+  {
+    id: 4,
+    slug: "didi-accessibility-inclusivity",
+    title: "Improving Accessibility & Inclusivity in DiDi Rideshare Services",
+    category: "strategy",
+    description:
+      "Developed accessibility and inclusivity solutions for DiDi's rideshare services in Melbourne, addressing service gaps for passengers with disabilities, parents, and service animal owners.",
+    tools: ["Market Research", "Competitor Analysis", "Business Model Canvas", "Process Mapping", "PowerPoint"],
+    coverImage: "/images/projects/didi-cover.jpg",
+    duration: "8-12 weeks",
+    teamSize: "4 members",
+    role: "Business Analyst / Strategy Consultant",
+    
+    // Project Summary
+    summary: {
+      overview: "Addressed critical accessibility and inclusivity challenges within DiDi's rideshare services through comprehensive market research, competitor benchmarking, and stakeholder analysis. Proposed scalable, sustainable solutions to enhance customer experience, improve compliance, and strengthen DiDi's competitive positioning in the Melbourne market.",
+      objectives: [
+        "Identify accessibility gaps in DiDi's current service offering",
+        "Understand customer pain points through primary market research",
+        "Benchmark competitor offerings and best practices",
+        "Propose feasible, business-aligned solutions",
+        "Align recommendations with UN Sustainable Development Goals (SDGs)",
+        "Create a comprehensive strategy for accessibility improvements"
+      ],
+      stakeholders: [
+        "DiDi Australia Management",
+        "Passengers with disabilities",
+        "Parents requiring child seats",
+        "Service animal owners",
+        "DiDi drivers and partner networks",
+        "Compliance & Legal teams",
+        "Marketing & Customer Experience teams"
+      ],
+      businessProblem: "DiDi faced significant accessibility challenges impacting market share and brand reputation: 36% of users reported discrimination when travelling with service animals, only 14% of vehicles were wheelchair-accessible, and 68% of parents avoided rideshare due to lack of child seat options. These gaps created compliance risks and limited competitive advantage against Uber."
+    },
+
+    // Documentation
+    documentation: {
+      brd: {
+        title: "Business Requirements Document",
+        description: "Detailed accessibility requirements, market research findings, and stakeholder needs analysis",
+        downloadUrl: "/docs/didi-brd.html",
+        available: false
+      },
+      marketResearch: {
+        title: "Market Research & Competitor Analysis",
+        description: "Benchmarking report comparing DiDi vs Uber accessibility features and customer insights",
+        downloadUrl: "/docs/didi-market-research.html",
+        available: false
+      },
+      businessCase: {
+        title: "Business Case & Financial Model",
+        description: "ROI analysis, pricing strategy, and revenue projections for proposed solutions",
+        downloadUrl: "/docs/didi-business-case.html",
+        available: false
+      },
+      processFlow: {
+        title: "Service Process Flows",
+        description: "BPMN diagrams for ChildSeat, DidiCare, and DidiCompanion tiers",
+        downloadUrl: "/docs/didi-process-flows.html",
+        available: false
+      },
+      presentation: {
+        title: "Strategic Recommendation Presentation",
+        description: "Comprehensive presentation with market validation, solutions, and implementation roadmap",
+        downloadUrl: "/docs/didi-presentation.pdf",
+        available: false
+      }
+    },
+
+    // Skills & Tools
+    baSkills: [
+      "Market research & primary data collection",
+      "Stakeholder interviews (12+ interviews)",
+      "Competitor benchmarking analysis",
+      "Requirements gathering & pain point analysis",
+      "Business model development",
+      "Process mapping & service design",
+      "Financial modeling & ROI analysis",
+      "Strategic recommendation development"
+    ],
+    toolsUsed: [
+      "Market Research Methodologies",
+      "Competitor Analysis Framework",
+      "Business Model Canvas",
+      "Process Mapping (BPMN)",
+      "Financial Modeling",
+      "PowerPoint",
+      "Excel",
+      "Survey & Interview Tools"
+    ],
+
+    // Timeline
+    timeline: [
+      { phase: "Discovery & Interviews", duration: "Week 1-3", description: "12 in-person interviews at Melbourne Central, stakeholder mapping" },
+      { phase: "Market Research", duration: "Week 2-4", description: "Competitor analysis (Uber Assist), industry benchmarking, surveys" },
+      { phase: "Problem Analysis", duration: "Week 4-6", description: "Pain point synthesis, accessibility gap mapping, risk assessment" },
+      { phase: "Solutions Design", duration: "Week 6-8", description: "Business model development, pricing strategy, service tiers design" },
+      { phase: "Business Case Development", duration: "Week 8-10", description: "Financial modeling, ROI analysis, implementation roadmap" },
+      { phase: "Final Presentation", duration: "Week 10-12", description: "Strategic presentation, stakeholder alignment, delivery" }
+    ],
+
+    // Achievements
+    achievements: [
+      "Identified strong willingness to pay (58-100% of respondents) for accessibility guarantees",
+      "Quantified 3 major service gaps affecting 36% (service animals), 14% (wheelchair access), and 68% (child seats) of user base",
+      "Designed 3 scalable service tiers: DidiChildSeat (+$8), DidiCare, and DidiCompanion",
+      "Demonstrated potential $2.5M+ revenue opportunities for drivers through incentive programs",
+      "Aligned recommendations with UN SDGs (3, 10, 11, 17) for credibility and impact",
+      "Developed competitive advantage strategy over Uber in accessibility segment",
+      "Created comprehensive implementation roadmap with risk mitigation strategies"
+    ],
+
+    // Research Findings
+    context: "University semester project addressing real-world accessibility challenges in the rideshare industry. Conducted in Melbourne with focus on DiDi's market positioning and customer needs.",
+    
+    researchFindings: {
+      accessibilityGaps: [
+        "36% of users reported discrimination when travelling with service animals",
+        "Only 14% of rideshare vehicles were wheelchair-accessible",
+        "68% of parents avoided rideshare due to lack of child seat options",
+        "Limited awareness on how to request accessible rides"
+      ],
+      marketOpportunities: [
+        "58-100% willingness to pay premium for accessibility guarantees",
+        "Untapped market segment: parents (68% potential) and disabled passengers (36% potential)",
+        "Driver incentive opportunities for accessibility training and vehicle modifications",
+        "Competitive differentiation against Uber in inclusive service offerings"
+      ],
+      competitorInsights: [
+        "Uber Assist exists but lacks comprehensive coverage and awareness",
+        "Limited child seat integration across Australian rideshare providers",
+        "Service animal policies inconsistent and poorly communicated",
+        "Opportunity gap: no provider dominates accessibility segment"
+      ]
+    },
+
+    proposedSolutions: [
+      {
+        name: "DidiChildSeat Option",
+        description: "Add-on service (+$8) allowing riders to request any vehicle size with guaranteed child seat",
+        benefits: "Addresses 68% of parent segment, recurring revenue stream, driver incentive opportunity"
+      },
+      {
+        name: "DidiCare Tier",
+        description: "Accessibility-focused ride category with trained drivers and extended wait times",
+        benefits: "Premium positioning, improved service quality, driver premium compensation, compliance alignment"
+      },
+      {
+        name: "DidiCompanion Tier",
+        description: "Pre-registered service animal ride option ensuring compliance and rider peace of mind",
+        benefits: "Eliminates discrimination, legal compliance, builds brand trust, serves underserved market"
+      }
+    ],
+
+    requirements: {
+      functional: [
+        "Rider app feature for accessibility tier selection",
+        "Driver interface for accessibility training and certification",
+        "Child seat equipment tracking and verification system",
+        "Service animal registry with rider verification",
+        "Rating and feedback system specific to accessibility experience",
+        "Compliance documentation and audit trails"
+      ],
+      nonFunctional: [
+        "Scalable to support 100,000+ vehicles across Australia",
+        "Compliance with Australian Disability Discrimination Act",
+        "Training program scalability for 50,000+ drivers",
+        "Cost per additional vehicle modification < $500"
+      ]
+    },
+
+    approach: [
+      "Conducted 12 in-person interviews at Melbourne Central station",
+      "Surveyed passengers with disabilities, parents, and service animal owners",
+      "Benchmarked Uber Assist and international rideshare accessibility features",
+      "Analyzed regulatory requirements and compliance landscape",
+      "Developed 3 service tiers with individual business models",
+      "Created financial projections for revenue and cost-benefit analysis",
+      "Aligned solutions with UN Sustainable Development Goals"
+    ],
+
+    dataAndTools: [
+      "Primary market research data (12 interviews, 50+ surveys)",
+      "Competitor analysis framework",
+      "Business Model Canvas",
+      "Financial modeling (Excel)",
+      "Process mapping (BPMN)",
+      "Stakeholder analysis matrix",
+      "Risk assessment matrix",
+      "Strategic recommendations framework"
+    ],
+
+    testing: [
+      "Interview and survey data validation",
+      "Competitor feature comparison analysis",
+      "Business model stress testing",
+      "Financial scenario analysis (optimistic, realistic, pessimistic)",
+      "Stakeholder feedback incorporation"
+    ],
+
+    outcomes: [
+      "University project completed with high distinction",
+      "Strategic recommendations approved by academic panel",
+      "Market-validated solution design ready for implementation",
+      "Comprehensive business case for DiDi Australia consideration",
+      "Established accessibility & inclusivity as competitive advantage",
+      "Created implementation roadmap with 12-18 month timeline"
+    ],
+
+    additionalMetrics: {
+      marketSize: "36% (service animals) + 68% (parents) + 14% (wheelchair users) = 118% addressable market growth",
+      revenueOpportunity: "$2.5M+ annually through add-ons and driver incentives",
+      customerSatisfaction: "58-100% willing to pay premium for accessibility",
+      competitiveAdvantage: "Only comprehensive accessibility solution vs. fragmented competitor offerings"
+    }
+  },
 ];
 
 export const projectCategories = [
