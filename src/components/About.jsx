@@ -1,5 +1,5 @@
 import { CONFIG } from "../data/config";
-import { CheckCircle, MapPin } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
 export default function About() {
   const points = [
@@ -7,6 +7,8 @@ export default function About() {
     "Process mapping (BPMN) & documentation",
     "UAT support & defect triage",
     "Data validation & reporting",
+    "Stakeholder management & communication",
+    "Risk assessment & mitigation strategies",
   ];
 
   return (
@@ -17,33 +19,36 @@ export default function About() {
           <div className="w-20 h-1 mx-auto" style={{ backgroundColor: "var(--accent)" }} />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <img
-            className="rounded-lg shadow-lg w-full"
-            src="/BA_Skills.png"
-            alt="Business analysis collaboration"
-          />
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left side - Image */}
+          <div className="flex justify-center">
+            <img
+              className="rounded-lg shadow-lg w-full max-w-md"
+              src="/BA_Skills.png"
+              alt="Business analysis collaboration"
+            />
+          </div>
 
+          {/* Right side - Content */}
           <div>
-            <h3 className="text-2xl font-semibold mb-4">
+            <h3 className="text-3xl font-bold mb-6">
               Turning Business Needs into Delivery-Ready Outcomes
             </h3>
-            <p className="text-gray-700 mb-5">
+            <p className="text-gray-700 mb-8 leading-relaxed text-lg">
               I work at the intersection of business, data, and delivery. I focus on
               clarity: well-structured requirements, measurable acceptance criteria,
               and clean communication across stakeholders.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+            {/* Skills Grid - 2 columns */}
+            <div className="grid grid-cols-2 gap-4">
               {points.map((p) => (
-                <div key={p} className="flex items-center gap-2">
-                  <CheckCircle size={18} style={{ color: "var(--accent)" }} />
-                  <span>{p}</span>
+                <div key={p} className="flex items-start gap-3 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+                  <CheckCircle size={20} style={{ color: "var(--accent)" }} className="flex-shrink-0 mt-1" />
+                  <span className="text-gray-700 font-medium text-sm">{p}</span>
                 </div>
               ))}
             </div>
-
-
           </div>
         </div>
       </div>
