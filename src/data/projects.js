@@ -617,17 +617,39 @@ export const projects = [
       {
         name: "DidiChildSeat Option",
         description: "Add-on service (+$8) allowing riders to request any vehicle size with guaranteed child seat",
-        benefits: "Addresses 68% of parent segment, recurring revenue stream, driver incentive opportunity"
+        benefits: "Addresses 68% of parent segment, recurring revenue stream, driver incentive opportunity",
+        image: "/images/projects/didi-childseat-solution.jpg"
       },
       {
         name: "DidiCare Tier",
         description: "Accessibility-focused ride category with trained drivers and extended wait times",
-        benefits: "Premium positioning, improved service quality, driver premium compensation, compliance alignment"
+        benefits: "Premium positioning, improved service quality, driver premium compensation, compliance alignment",
+        image: "/images/projects/didi-care-solution.jpg"
       },
       {
         name: "DidiCompanion Tier",
         description: "Pre-registered service animal ride option ensuring compliance and rider peace of mind",
-        benefits: "Eliminates discrimination, legal compliance, builds brand trust, serves underserved market"
+        benefits: "Eliminates discrimination, legal compliance, builds brand trust, serves underserved market",
+        image: "/images/projects/didi-companion-solution.jpg"
+      }
+    ],
+
+    // Project Visuals Gallery
+    visuals: [
+      {
+        title: "Wicked Problem Analysis",
+        description: "Comprehensive identification of accessibility challenges across 5 key areas",
+        image: "/images/projects/didi-wicked-problem.jpg"
+      },
+      {
+        title: "Research Findings & Statistics",
+        description: "Key accessibility statistics from primary market research and stakeholder interviews",
+        image: "/images/projects/didi-research-findings.jpg"
+      },
+      {
+        title: "DidiCompanion - Legal Compliance",
+        description: "Service animal verification and regulatory compliance framework",
+        image: "/images/projects/didi-companion-compliance.jpg"
       }
     ],
 
