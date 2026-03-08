@@ -14,6 +14,11 @@ export default function Projects() {
   return (
     <section id="projects" className="py-16 bg-gray-50 px-6">
       <div className="container mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-2">Featured Projects</h2>
+          <div className="w-20 h-1 mx-auto" style={{ backgroundColor: "var(--accent)" }} />
+        </div>
+
         {/* ...header + filters unchanged... */}
 
         <div className="grid md:grid-cols-2 gap-8">
