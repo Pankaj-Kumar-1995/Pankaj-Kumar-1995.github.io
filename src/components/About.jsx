@@ -76,21 +76,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Risk Matrix Section */}
-        <div className="bg-white p-8 rounded-lg shadow-lg mb-12">
-          <h3 className="text-2xl font-bold text-center mb-6">BA Skills & Risk Assessment Framework</h3>
-          <div className="flex justify-center mb-6">
-            <img
-              src="/images/skills/risk-matrix.png"
-              alt="4x4 Risk Matrix for Business Analysis"
-              className="max-w-4xl w-full h-auto rounded-lg shadow-md"
-            />
-          </div>
-          <p className="text-center text-gray-600 text-sm max-w-2xl mx-auto">
-            Risk Assessment Matrix used in project planning, stakeholder management, and mitigation strategy development
-          </p>
-        </div>
-
         {/* Detailed Skills Grid */}
         <div className="mb-8">
           <h3 className="text-2xl font-bold mb-8 text-center">Core Business Analysis Competencies</h3>
