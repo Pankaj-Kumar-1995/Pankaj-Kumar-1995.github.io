@@ -6,6 +6,6 @@ export const CONFIG = {
   email: "Pankajoffice1504@gmail.com",
   phone: "+61 413 992 507",
   linkedin: "LinkedIn URL", // replace later
-  resumeUrl: "/resume/Resume_Kumar_Pankaj.docx",
+  resumeUrl: "/resume/Resume_Kumar_Pankaj.pdf",
   showTestimonials: false,
 };
