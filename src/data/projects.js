@@ -717,9 +717,37 @@ export const projects = [
   },
 ];
 
+  // Add freelancing projects below this line
+  // {
+  //   id: 5,
+  //   slug: "my-freelance-project",
+  //   title: "Freelance Project Title",
+  //   category: "freelancing",
+  //   description: "Short description of the project.",
+  //   tools: ["Tool 1", "Tool 2"],
+  //   coverImage: "/images/projects/cover.jpg",
+  //   duration: "X weeks",
+  //   teamSize: "Solo",
+  //   role: "Business Analyst",
+  //   summary: { overview: "", objectives: [], stakeholders: [], businessProblem: "" },
+  //   documentation: {},
+  //   baSkills: [],
+  //   toolsUsed: [],
+  //   timeline: [],
+  //   achievements: [],
+  //   context: "",
+  //   requirements: { functional: [], nonFunctional: [] },
+  //   approach: [],
+  //   dataAndTools: [],
+  //   testing: [],
+  //   outcomes: [],
+  // },
+];
+
 export const projectCategories = [
   { key: "all", label: "All" },
   { key: "analytics", label: "Analytics" },
   { key: "enterprise", label: "Enterprise" },
   { key: "strategy", label: "Strategy" },
+  { key: "freelancing", label: "Freelancing" },
 ];

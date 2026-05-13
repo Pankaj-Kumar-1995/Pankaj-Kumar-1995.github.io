@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { CONFIG } from "../data/config";
 import { scrollToId } from "../utils/scrollTo";
-import { ArrowRight, FileText } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -48,12 +48,6 @@ export default function Hero() {
               View Projects
             </button>
 
-            <a
-              href={CONFIG.resumeUrl}
-              className="px-6 py-3 rounded-md border border-gray-300 hover:bg-gray-50 transition-colors inline-flex items-center gap-2"
-            >
-              <FileText size={18} /> Resume
-            </a>
           </div>
         </div>
 

@@ -49,15 +49,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="mt-6">
-                <a
-                  href={CONFIG.resumeUrl}
-                  className="inline-block px-6 py-3 rounded-md text-white font-medium"
-                  style={{ backgroundColor: "var(--accent)" }}
-                >
-                  Download Resume
-                </a>
-              </div>
             </div>
           </div>
         </div>

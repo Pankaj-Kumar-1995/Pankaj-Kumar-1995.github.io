@@ -1,28 +1,41 @@
 import { useEffect, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { CONFIG } from "../data/config";
 import { scrollToId } from "../utils/scrollTo";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
     document.documentElement.style.setProperty("--accent", CONFIG.accentColor);
   }, []);
 
-  const links = [
+  const scrollLinks = [
     { id: "about", label: "About" },
-    { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
     { id: "skills", label: "Skills" },
+    { id: "experience", label: "Experience" },
     { id: "contact", label: "Contact" },
   ];
+
+  const handleScrollLink = (id) => {
+    if (!isHome) {
+      navigate("/");
+      setTimeout(() => scrollToId(id), 100);
+    } else {
+      scrollToId(id);
+    }
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow">
       <div className="container mx-auto px-6 py-3 flex items-center justify-between">
         <button
-          onClick={() => scrollToId("top")}
+          onClick={() => (isHome ? scrollToId("top") : navigate("/"))}
           className="text-xl font-bold"
           style={{ color: "var(--accent)" }}
         >
@@ -30,22 +43,24 @@ export default function Navbar() {
         </button>
 
         <div className="hidden md:flex items-center gap-8">
-          {links.map((l) => (
+          {scrollLinks.map((l) => (
             <button
               key={l.id}
-              onClick={() => scrollToId(l.id)}
+              onClick={() => handleScrollLink(l.id)}
               className="hover:text-blue-600 transition-colors"
             >
               {l.label}
             </button>
           ))}
-          <a
-            href={CONFIG.resumeUrl}
-            className="px-4 py-2 rounded-md text-white"
-            style={{ backgroundColor: "var(--accent)" }}
+          <button
+            onClick={() => navigate("/blogs")}
+            className={`hover:text-blue-600 transition-colors ${
+              location.pathname === "/blogs" ? "font-semibold" : ""
+            }`}
+            style={location.pathname === "/blogs" ? { color: "var(--accent)" } : {}}
           >
-            Resume
-          </a>
+            Blogs
+          </button>
         </div>
 
         <button
@@ -60,11 +75,11 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-white border-t">
           <div className="px-6 py-4 flex flex-col gap-3">
-            {links.map((l) => (
+            {scrollLinks.map((l) => (
               <button
                 key={l.id}
                 onClick={() => {
-                  scrollToId(l.id);
+                  handleScrollLink(l.id);
                   setOpen(false);
                 }}
                 className="text-left hover:text-blue-600 transition-colors"
@@ -72,13 +87,15 @@ export default function Navbar() {
                 {l.label}
               </button>
             ))}
-            <a
-              href={CONFIG.resumeUrl}
-              className="px-4 py-2 rounded-md text-white text-left"
-              style={{ backgroundColor: "var(--accent)" }}
+            <button
+              onClick={() => {
+                navigate("/blogs");
+                setOpen(false);
+              }}
+              className="text-left hover:text-blue-600 transition-colors"
             >
-              Download Resume
-            </a>
+              Blogs
+            </button>
           </div>
         </div>
       )}
