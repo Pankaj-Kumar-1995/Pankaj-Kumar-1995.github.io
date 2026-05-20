@@ -1,4 +1,10 @@
 // src/data/projects.js
+import { rmitDocs } from "./rmitDocs";
+import { nyc311Docs } from "./nyc311Docs";
+import { colesDocs } from "./colesDocs";
+import { didiDocs } from "./didiDocs";
+import { oppoDocs } from "./oppoDocs";
+import { suffescomDocs } from "./suffescomDocs";
 
 export const projects = [
   {
@@ -38,39 +44,33 @@ export const projects = [
       brd: {
         title: "Business Requirements Document",
         description: "Detailed business requirements including stakeholder needs, success criteria, and scope",
-        downloadUrl: "/docs/nyc311-project-doc.pdf",
-        available: true
+        content: nyc311Docs.brd,
       },
       frd: {
         title: "Functional Requirements Document",
         description: "Functional specifications for the forecasting system, API requirements, and data inputs",
-        downloadUrl: "/docs/nyc311-frd.html",
-        available: false
+        content: nyc311Docs.frd,
       },
       userStories: {
         title: "User Stories & Acceptance Criteria",
         description: "User stories from the perspective of operations managers, analysts, and stakeholders",
-        downloadUrl: "/docs/nyc311-user-stories.html",
-        available: true
+        content: nyc311Docs.userStories,
       },
       bpmn: {
         title: "Process Flow Diagrams (BPMN)",
         description: "Business process diagrams showing data collection, forecasting, and reporting workflows",
-        downloadUrl: "/docs/nyc311-bpmn.html",
-        available: false
+        content: nyc311Docs.bpmn,
       },
       dataModel: {
         title: "Data Model & Architecture",
         description: "ER diagrams, data mappings, and system architecture documentation",
-        downloadUrl: "/docs/nyc311-data-model.html",
-        available: false
+        content: nyc311Docs.dataModel,
       },
       wireframes: {
         title: "Wireframes & UI Mockups",
         description: "Dashboard and reporting interface designs",
-        downloadUrl: "/docs/nyc311-wireframes.html",
-        available: false
-      }
+        content: nyc311Docs.wireframes,
+      },
     },
 
     // Skills & Tools
@@ -203,39 +203,33 @@ export const projects = [
       brd: {
         title: "Business Requirements Document",
         description: "Business case, success metrics, and AI solution strategy",
-        downloadUrl: "/docs/rmit-brd.html",
-        available: true
+        content: rmitDocs.brd,
       },
       frd: {
         title: "Functional Requirements Document",
         description: "Chatbot capabilities, AI model requirements, integration specifications",
-        downloadUrl: "/docs/rmit-frd.html",
-        available: false
+        content: rmitDocs.frd,
       },
       userStories: {
         title: "User Stories & Journey Maps",
         description: "Student journeys, support staff workflows, admin requirements",
-        downloadUrl: "/docs/rmit-user-stories.html",
-        available: false
+        content: rmitDocs.userStories,
       },
       bpmn: {
         title: "Process Flows (Current & Future State)",
         description: "As-is and to-be process diagrams with chatbot integration points",
-        downloadUrl: "/docs/rmit-bpmn.html",
-        available: false
+        content: rmitDocs.bpmn,
       },
       dataModel: {
         title: "AI Solution Architecture",
         description: "Responsible AI framework, data governance, model requirements",
-        downloadUrl: "/docs/rmit-ai-architecture.html",
-        available: false
+        content: rmitDocs.dataModel,
       },
       wireframes: {
         title: "Chatbot UI Mockups & Flows",
         description: "Conversation flows, interface designs, escalation paths",
-        downloadUrl: "/docs/rmit-wireframes.html",
-        available: false
-      }
+        content: rmitDocs.wireframes,
+      },
     },
 
     baSkills: [
@@ -358,39 +352,33 @@ export const projects = [
       brd: {
         title: "Business Case & Strategy Document",
         description: "ERP transformation business case, financial analysis, benefits realization",
-        downloadUrl: "/docs/coles-project-doc.pdf",
-        available: true
+        content: colesDocs.brd,
       },
       frd: {
         title: "Functional Scope Analysis",
         description: "Detailed functional modules, customization requirements, process changes",
-        downloadUrl: "/docs/coles-frd.html",
-        available: false
+        content: colesDocs.frd,
       },
       userStories: {
         title: "Stakeholder Impact Assessment",
         description: "User personas, role changes, training requirements for each department",
-        downloadUrl: "/docs/coles-stakeholder-analysis.html",
-        available: false
+        content: colesDocs.userStories,
       },
       bpmn: {
         title: "Process Mapping - As-Is & To-Be",
         description: "Current vs. future state processes across Finance, Supply Chain, Operations",
-        downloadUrl: "/docs/coles-bpmn.html",
-        available: false
+        content: colesDocs.bpmn,
       },
       dataModel: {
         title: "Data Migration & Architecture Plan",
         description: "Data mapping, legacy system integration, data quality assessment",
-        downloadUrl: "/docs/coles-data-plan.html",
-        available: false
+        content: colesDocs.dataModel,
       },
       riskAnalysis: {
         title: "Risk Assessment & Mitigation",
         description: "Technical, organizational, and financial risks with mitigation strategies",
-        downloadUrl: "/docs/coles-risk-analysis.html",
-        available: false
-      }
+        content: colesDocs.riskAnalysis,
+      },
     },
 
     baSkills: [
@@ -517,33 +505,28 @@ export const projects = [
       brd: {
         title: "Business Requirements Document",
         description: "Detailed accessibility requirements, market research findings, and stakeholder needs analysis",
-        downloadUrl: "/docs/didi-brd.html",
-        available: false
+        content: didiDocs.brd,
       },
       marketResearch: {
         title: "Market Research & Competitor Analysis",
         description: "Benchmarking report comparing DiDi vs Uber accessibility features and customer insights",
-        downloadUrl: "/docs/didi-market-research.html",
-        available: false
+        content: didiDocs.marketResearch,
       },
       businessCase: {
         title: "Business Case & Financial Model",
         description: "ROI analysis, pricing strategy, and revenue projections for proposed solutions",
-        downloadUrl: "/docs/didi-business-case.html",
-        available: false
+        content: didiDocs.businessCase,
       },
       processFlow: {
         title: "Service Process Flows",
         description: "BPMN diagrams for ChildSeat, DidiCare, and DidiCompanion tiers",
-        downloadUrl: "/docs/didi-process-flows.html",
-        available: false
+        content: didiDocs.processFlow,
       },
       presentation: {
         title: "Strategic Recommendation Presentation",
         description: "Comprehensive presentation with market validation, solutions, and implementation roadmap",
-        downloadUrl: "/docs/didi-presentation.pdf",
-        available: false
-      }
+        content: didiDocs.presentation,
+      },
     },
 
     // Skills & Tools
@@ -742,12 +725,299 @@ export const projects = [
   //   testing: [],
   //   outcomes: [],
   // },
+
+  {
+    id: 5,
+    slug: "oppo-device-qa",
+    title: "OPPO Reno 7 & Find X3 — Device QA & 5G Validation",
+    category: "qa",
+    description: "Led hardware-software integration testing, 5G network validation, root cause analysis, and test documentation for OPPO's flagship Reno 7 and Find X3 smartphone lines.",
+    tools: ["Test Strategy", "5G Testing", "Root Cause Analysis", "Kaizen", "Android QA"],
+    coverImage: "/images/projects/oppo-cover.jpg",
+    duration: "22 months",
+    teamSize: "12 members",
+    role: "Testing Engineer / QA Specialist",
+    summary: {
+      overview: "Delivered end-to-end quality assurance for OPPO's flagship Reno 7 and Find X3 smartphone lines, covering hardware-software integration testing, 5G SA/NSA network validation, camera system QA, battery endurance benchmarking, and systematic root cause analysis. Applied Kaizen principles to drive continuous improvement, reducing field defect escape rate by 38% from Find X2 to Find X3.",
+      objectives: [
+        "Validate 5G SA and NSA connectivity across target market frequency bands",
+        "Ensure hardware-software integration stability across firmware build iterations",
+        "Achieve < 4.0 field defect escape rate per 10,000 units at market launch",
+        "Build reusable test documentation frameworks for future OPPO device lines",
+        "Implement Kaizen-based continuous improvement in QA workflow and coverage",
+        "Systematically analyse market failures and feed learnings back into pre-launch testing",
+      ],
+      stakeholders: [
+        "OPPO R&D Engineering Team (firmware and hardware design)",
+        "Software Development Team (Android OS and app layer)",
+        "Product Management (feature specifications and market requirements)",
+        "After-Sales & Customer Service (field defect reporting)",
+        "Carrier Certification Teams (network operator requirements)",
+        "Manufacturing Quality Control (pre-production device pool)",
+      ],
+      businessProblem: "OPPO's rapid device launch cadence created pressure on QA cycles, leading to field defect escape rates that damaged brand reputation in key markets (Australia, Europe). The lack of structured test documentation and root cause analysis processes meant recurring defect patterns were not being systematically prevented across device generations.",
+    },
+    documentation: {
+      testStrategy: {
+        title: "Test Strategy Document",
+        description: "Overall QA approach, test types, scope, entry/exit criteria, and risk-based testing framework",
+        content: oppoDocs.testStrategy,
+      },
+      testCases: {
+        title: "Test Case Documentation",
+        description: "Structured test cases for 5G connectivity, camera system, battery endurance, and hardware-software integration",
+        content: oppoDocs.testCases,
+      },
+      rootCause: {
+        title: "Root Cause Analysis Framework",
+        description: "5-Why methodology, defect classification matrix, fishbone categories, and RCA template",
+        content: oppoDocs.rootCause,
+      },
+      processFlow: {
+        title: "QA Process Flow Diagrams",
+        description: "End-to-end QA lifecycle: test design, execution, defect management, and Kaizen improvement cycle",
+        content: oppoDocs.processFlow,
+      },
+      marketInsights: {
+        title: "Market Failure & Field Insights",
+        description: "Field defect analysis, top market defect categories, Kaizen actions taken, and before/after metrics",
+        content: oppoDocs.marketInsights,
+      },
+    },
+    baSkills: [
+      "Test strategy design",
+      "Root cause analysis (5-Why, Fishbone)",
+      "Test documentation & traceability",
+      "Risk-based test planning",
+      "Defect triage & severity classification",
+      "Kaizen continuous improvement",
+      "Market failure analysis",
+      "Cross-functional stakeholder reporting",
+    ],
+    toolsUsed: [
+      "JIRA (defect tracking)",
+      "Confluence (test documentation)",
+      "Network simulators (5G SA/NSA)",
+      "Robotic test automation rigs",
+      "Thermal imaging equipment",
+      "Android Debug Bridge (ADB)",
+      "Benchmarking tools (AnTuTu, Geekbench)",
+      "DXOMARK camera criteria",
+    ],
+    timeline: [
+      { phase: "Find X3 Alpha Testing", duration: "Month 1–3", description: "Test strategy design, test case creation, lab environment setup, 5G network configuration" },
+      { phase: "Find X3 Beta & Regression", duration: "Month 4–6", description: "Full test execution, defect triage, RCA on P1/P2 defects, regression automation (30% coverage)" },
+      { phase: "Find X3 RC & Market Launch", duration: "Month 7–9", description: "Release gate validation, exit criteria verification, carrier certification support, Kaizen retrospective" },
+      { phase: "Reno 7 Alpha Testing", duration: "Month 10–14", description: "Kaizen learnings applied from Find X3; expanded 5G and camera test suites; new test automation scripts" },
+      { phase: "Reno 7 Beta & RC", duration: "Month 15–19", description: "Full regression, RCA completion, market failure analysis from Find X3 field data incorporated" },
+      { phase: "Reno 7 Launch & Field Review", duration: "Month 20–22", description: "Post-launch field defect monitoring, market failure report, final Kaizen actions documented" },
+    ],
+    achievements: [
+      "Field defect escape rate reduced 38%: from 6.1 (Find X2) to 3.8 per 10,000 units (Find X3)",
+      "5G field connectivity complaints reduced 36% through expanded pre-launch handover test suite",
+      "Regression automation coverage increased from 18% to 31% across the engagement",
+      "P1 defect resolution time reduced 44%: from 3.2 days to 1.8 days average",
+      "Test cycle duration reduced 18%: from 11 weeks to 9 weeks (alpha to RC)",
+      "Zero P1/P2 field defects attributable to test coverage gaps on Reno 7 launch",
+      "Field Learning Repository created in Confluence — used by QA team on subsequent OPPO device lines",
+    ],
+    context: "OPPO is one of the world's top-5 smartphone manufacturers. The Reno 7 and Find X3 were flagship and ultra-premium devices targeting Australia, Europe, and China markets, with strong competition from Samsung and Apple requiring near-zero defect tolerance at launch.",
+    requirements: {
+      functional: [
+        "5G SA and NSA connectivity validated across all target market frequency bands",
+        "Camera image quality meets DXOMARK-aligned baseline criteria for each market segment",
+        "Battery endurance within ± 5% of advertised specification under standardised usage",
+        "All P1/P2 defects resolved and verified before RC sign-off",
+        "Root cause analysis completed for all Medium+ defects before closure",
+      ],
+      nonFunctional: [
+        "Defect escape rate at market launch: < 4.0 per 10,000 units",
+        "5G connectivity pass rate: ≥ 99% across all tested frequency bands",
+        "Test cycle from alpha to RC: ≤ 9 weeks",
+        "Regression automation coverage: ≥ 30%",
+        "Device thermal: no thermal shutdown under standard usage conditions",
+      ],
+    },
+    approach: [
+      "Conducted risk analysis of each device's novel components to prioritise test coverage",
+      "Designed comprehensive test strategy covering functional, performance, connectivity, and endurance testing",
+      "Created structured test case library in JIRA/Confluence aligned to hardware specs and software features",
+      "Applied 5-Why and Fishbone RCA methodology for all Medium+ severity defects",
+      "Ran monthly field defect analysis from after-sales data; fed findings back into test suite updates",
+      "Implemented Kaizen retrospectives after each milestone; tracked action items to completion",
+      "Shared market failure insights across R&D, Software, and Product in monthly cross-team sessions",
+    ],
+    dataAndTools: [
+      "JIRA", "Confluence", "5G network simulators", "RF signal attenuators",
+      "Robotic test automation rigs", "ADB (Android Debug Bridge)", "Thermal cameras",
+      "Geekbench / AnTuTu benchmarking", "Excel (defect tracking)", "Postman (API validation)",
+    ],
+    testing: [
+      "Hardware-software integration testing across all firmware build iterations",
+      "5G SA/NSA connectivity and handover testing in RF lab environment",
+      "Camera image quality testing under controlled lighting conditions",
+      "Battery endurance and fast-charge cycle testing (robotic scripted usage)",
+      "Thermal performance testing under sustained load scenarios",
+      "Field defect reproduction testing from market feedback reports",
+    ],
+    outcomes: [
+      "Both devices launched on schedule with defect rates below target thresholds",
+      "Find X3 received strong reviews in Australian and European markets with minimal post-launch defect reports",
+      "QA process improvements documented and handed over for use in subsequent OPPO device lines",
+      "Field Learning Repository in Confluence became a reference resource for the wider QA organisation",
+      "Kaizen culture embedded in QA team — retrospective practice continued beyond the engagement",
+    ],
+  },
+
+  {
+    id: 6,
+    slug: "suffescom-hyperlocal-cloud",
+    title: "Suffescom Hyperlocal Cloud — Multi-Vertical Business Platform",
+    category: "qa",
+    description: "QA and product validation for Suffescom's white-label SaaS platform enabling a single dashboard to manage retail, restaurant, delivery, and taxi businesses for hyperlocal entrepreneurs.",
+    tools: ["API Testing", "User Stories", "E2E Testing", "Agile QA", "Customer Journey"],
+    coverImage: "/images/projects/suffescom-cover.jpg",
+    duration: "6 months",
+    teamSize: "5 members",
+    role: "Quality Analyst / Product QA",
+    summary: {
+      overview: "Led QA delivery for Suffescom's Hyperlocal Cloud platform — a white-label SaaS solution that gives entrepreneurs and enterprises a single admin dashboard to launch and manage retail stores, restaurants, delivery operations, and taxi/ride-hailing services. Delivered across 3 client deployments with zero P1/P2 defects at any go-live.",
+      objectives: [
+        "Validate all four business verticals: Retail, Restaurant, Delivery, and Taxi/Ride-Hailing",
+        "Ensure seamless cross-module integration and real-time data accuracy",
+        "Test white-label customisation across all customer-facing surfaces",
+        "Achieve zero P1/P2 defects at client deployment go-live",
+        "Analyse defect patterns and drive process improvements to reduce defect injection rate",
+        "Validate customer journey flows end-to-end: order placement through delivery completion",
+      ],
+      stakeholders: [
+        "Suffescom Product Manager (release owner and QA sign-off authority)",
+        "White-label B2B Clients (operators deploying branded apps to their customers)",
+        "End Customers — B2C (consumers placing orders or booking rides)",
+        "Delivery Drivers and Taxi Drivers (driver app users)",
+        "Development Team (feature development and bug resolution)",
+        "Business Analysts (user story and requirement owners)",
+      ],
+      businessProblem: "White-label SaaS platforms serving multiple business verticals are inherently complex to QA — a defect in the shared order management or payment service can cascade across all verticals simultaneously. Suffescom needed a structured QA process to validate cross-module integration, ensure white-label customisation did not break core functionality, and deliver defect-free builds to B2B clients with high reliability expectations.",
+    },
+    documentation: {
+      brd: {
+        title: "Business Requirements Document",
+        description: "Platform modules, business objectives, stakeholder register, and success criteria for the Hyperlocal Cloud platform",
+        content: suffescomDocs.brd,
+      },
+      userStories: {
+        title: "User Stories & Acceptance Criteria",
+        description: "User stories from business owner, customer, delivery agent, and admin perspectives with acceptance criteria",
+        content: suffescomDocs.userStories,
+      },
+      testStrategy: {
+        title: "Test Strategy & QA Plan",
+        description: "QA approach, module test coverage matrix, API testing strategy, and defect severity framework",
+        content: suffescomDocs.testStrategy,
+      },
+      processFlow: {
+        title: "System Architecture & Process Flows",
+        description: "Platform architecture, restaurant order flow, delivery dispatch flow, and cross-module integration scenarios",
+        content: suffescomDocs.processFlow,
+      },
+      defectLog: {
+        title: "Defect Analysis Report",
+        description: "Defect distribution by module, top critical defects with RCA, pattern analysis, and process improvements",
+        content: suffescomDocs.defectLog,
+      },
+    },
+    baSkills: [
+      "User story writing & refinement",
+      "Acceptance criteria definition",
+      "Customer journey mapping",
+      "API endpoint testing",
+      "Cross-module integration testing",
+      "Defect pattern analysis",
+      "Root cause analysis",
+      "Change request management",
+    ],
+    toolsUsed: [
+      "JIRA (defect tracking)",
+      "Postman (API testing)",
+      "Newman (API test automation)",
+      "Selenium (web UI automation)",
+      "Appium (mobile app testing)",
+      "Confluence (documentation)",
+      "Slack (team communication)",
+      "Google Sheets (test tracking)",
+    ],
+    timeline: [
+      { phase: "Onboarding & Test Planning", duration: "Week 1–2", description: "Platform familiarisation, test strategy creation, test case inventory review" },
+      { phase: "Retail & Restaurant QA", duration: "Week 3–7", description: "Full test execution for Retail and Restaurant modules; API testing; defect logging" },
+      { phase: "Delivery & Taxi QA", duration: "Week 8–13", description: "Delivery dispatch and taxi booking validation; driver app testing; real-time tracking verification" },
+      { phase: "Integration & White-Label QA", duration: "Week 14–17", description: "Cross-module integration testing; white-label customisation regression; Client 1 deployment" },
+      { phase: "Client Deployments 2 & 3", duration: "Week 18–22", description: "Deployment regression for Clients 2 and 3; defect pattern analysis; process improvements implemented" },
+      { phase: "Wrap-Up & Handover", duration: "Week 23–26", description: "Final defect analysis report; test case handover to internal QA team; lessons learned session" },
+    ],
+    achievements: [
+      "Zero P1/P2 defects at go-live across all 3 client deployments",
+      "284 total defects logged across 6 months; 100% of Critical/High resolved before any deployment",
+      "Defect injection rate reduced 31% in Months 5–6 vs. Months 1–2 through process improvements",
+      "API test coverage expanded from 40 to 95 negative test cases based on defect pattern analysis",
+      "Android OS compatibility matrix introduced — mobile P2 defects reduced 40%",
+      "Cross-module integration test suite expanded from 15 to 32 scenarios — P2 integration defects reduced 35%",
+      "Defect pattern report shared with Development Lead monthly — measurable reduction in repeat defect types",
+    ],
+    context: "Suffescom Solutions is a software development company specialising in on-demand and hyperlocal SaaS products. The Hyperlocal Cloud platform targets small-to-medium business operators in the food, retail, logistics, and transport sectors seeking a unified technology platform.",
+    requirements: {
+      functional: [
+        "End-to-end order flow functional across all 4 verticals (Retail, Restaurant, Delivery, Taxi)",
+        "Super Admin dashboard aggregates real-time data from all modules within 3-second refresh",
+        "White-label branding (logo, colours, domain) propagates to all surfaces within 60 seconds",
+        "Real-time driver/delivery tracking updates every 10 seconds on customer map",
+        "API response time ≤ 500ms for order and tracking endpoints under standard load",
+      ],
+      nonFunctional: [
+        "Zero P1/P2 defects at client deployment go-live",
+        "Mobile apps (iOS and Android) rating ≥ 4.0/5.0 on app stores",
+        "Platform uptime ≥ 99.5% during client business hours",
+        "White-label configuration deployable by client in < 30 minutes",
+        "Regression suite execution: full suite in ≤ 2 business days",
+      ],
+    },
+    approach: [
+      "Analysed user stories and acceptance criteria for all four verticals to design test coverage",
+      "Created API test collections in Postman for all critical order and tracking endpoints",
+      "Executed customer journey flows end-to-end for each vertical — place order through completion",
+      "Ran cross-module integration scenarios to test shared services (payment, notifications, tracking)",
+      "Performed white-label regression after each branding configuration change",
+      "Tracked defect patterns monthly and raised process improvement recommendations to Development Lead",
+      "Documented RCA for all P1/P2 defects with corrective and preventive actions",
+    ],
+    dataAndTools: [
+      "Postman", "Newman", "Selenium", "Appium", "JIRA",
+      "Confluence", "Slack", "Google Sheets", "Android Studio (device emulation)", "Xcode (iOS testing)",
+    ],
+    testing: [
+      "Functional testing for all four business vertical modules",
+      "API testing: positive, negative, boundary, and auth cases for all critical endpoints",
+      "End-to-end customer journey testing across Retail, Restaurant, Delivery, and Taxi flows",
+      "Cross-module integration testing: 32 scenarios covering shared services",
+      "White-label customisation regression after every deployment build",
+      "Mobile compatibility testing: Android 10/11/12 and iOS 14/15/16",
+    ],
+    outcomes: [
+      "3 successful client deployments with zero critical defects at go-live",
+      "Platform QA process documentation handed over and adopted by Suffescom's internal QA team",
+      "API test library of 95+ negative test cases retained as reusable asset for future platform modules",
+      "Defect pattern analysis contributed to development team training session on common error patterns",
+      "Client satisfaction: all 3 clients renewed contract for ongoing maintenance support",
+    ],
+  },
 ];
+// Add freelancing projects inside the array above this line
 
 export const projectCategories = [
   { key: "all", label: "All" },
   { key: "analytics", label: "Analytics" },
   { key: "enterprise", label: "Enterprise" },
   { key: "strategy", label: "Strategy" },
+  { key: "qa", label: "QA & Testing" },
   { key: "freelancing", label: "Freelancing" },
 ];

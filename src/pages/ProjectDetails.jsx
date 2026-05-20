@@ -1,6 +1,118 @@
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../data/projects";
-import { FileText, Download, Briefcase, Users, Clock, Target, Zap } from "lucide-react";
+import { FileText, Download, Briefcase, Users, Clock, Target, Zap, X } from "lucide-react";
+
+function DocModal({ doc, onClose }) {
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === "Escape") onClose(); };
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [onClose]);
+
+  if (!doc?.content) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
+      <div className="absolute inset-0 bg-black bg-opacity-50" onClick={onClose} />
+      <div className="relative bg-white rounded-xl shadow-2xl w-full max-w-3xl max-h-[88vh] flex flex-col">
+        <div className="flex items-start justify-between px-6 py-4 border-b flex-shrink-0">
+          <div>
+            <h3 className="text-xl font-bold">{doc.title}</h3>
+            <p className="text-sm text-gray-500 mt-0.5">{doc.description}</p>
+          </div>
+          <button
+            onClick={onClose}
+            className="ml-4 text-gray-400 hover:text-gray-700 transition-colors flex-shrink-0 mt-0.5"
+            aria-label="Close"
+          >
+            <X size={22} />
+          </button>
+        </div>
+
+        <div className="overflow-y-auto px-6 py-6 space-y-8">
+          {doc.content.sections.map((section, idx) => (
+            <div key={idx}>
+              {section.heading && (
+                <h4
+                  className="text-sm font-semibold uppercase tracking-wide mb-3 pb-1.5 border-b border-gray-200"
+                  style={{ color: "var(--accent)" }}
+                >
+                  {section.heading}
+                </h4>
+              )}
+              {section.body && (
+                <p className="text-gray-700 leading-relaxed text-sm">{section.body}</p>
+              )}
+              {section.list && (
+                <ul className="space-y-1.5 mt-2">
+                  {section.list.map((item, i) => (
+                    <li key={i} className="flex gap-2 text-sm text-gray-700">
+                      <span style={{ color: "var(--accent)" }} className="font-bold flex-shrink-0 mt-0.5">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {section.table && (
+                <div className="overflow-x-auto rounded border border-gray-200 mt-2">
+                  <table className="w-full text-sm border-collapse">
+                    <thead>
+                      <tr style={{ backgroundColor: "var(--accent)" }}>
+                        {section.table.headers.map((h, i) => (
+                          <th key={i} className="px-3 py-2 text-left font-semibold text-white text-xs uppercase tracking-wide whitespace-nowrap">
+                            {h}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {section.table.rows.map((row, i) => (
+                        <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                          {row.map((cell, j) => (
+                            <td key={j} className="px-3 py-2 text-gray-700 border-t border-gray-100 text-sm">
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+              {section.subsections && (
+                <div className="space-y-4 mt-2">
+                  {section.subsections.map((sub, i) => (
+                    <div key={i} className="pl-4 border-l-2 border-blue-200">
+                      <h5 className="font-semibold text-sm text-gray-900 mb-1.5">{sub.title}</h5>
+                      {sub.body && (
+                        <p className="text-gray-600 text-sm leading-relaxed mb-1.5">{sub.body}</p>
+                      )}
+                      {sub.list && (
+                        <ul className="space-y-1">
+                          {sub.list.map((item, j) => (
+                            <li key={j} className="text-sm text-gray-600 flex gap-2">
+                              <span className="text-blue-400 flex-shrink-0">—</span>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function SectionHeading({ title, icon: Icon }) {
   return (
@@ -11,27 +123,39 @@ function SectionHeading({ title, icon: Icon }) {
   );
 }
 
-function DocumentCard({ doc }) {
+function DocumentCard({ doc, onOpen }) {
+  const hasContent = Boolean(doc.content);
+  const hasLink = doc.available && doc.downloadUrl;
+
   return (
     <div className="border rounded-lg p-4 hover:shadow-lg transition">
-      <div className="flex items-start justify-between">
-        <div className="flex-1">
+      <div className="flex items-start justify-between gap-4">
+        <div className="flex-1 min-w-0">
           <h4 className="font-semibold mb-1">{doc.title}</h4>
           <p className="text-sm text-gray-600">{doc.description}</p>
         </div>
-        {doc.available ? (
+        {hasContent ? (
+          <button
+            onClick={() => onOpen(doc)}
+            className="flex-shrink-0 px-3 py-2 rounded-md text-white text-sm flex items-center gap-2"
+            style={{ backgroundColor: "var(--accent)" }}
+          >
+            <FileText size={16} />
+            View
+          </button>
+        ) : hasLink ? (
           <a
             href={doc.downloadUrl}
             target="_blank"
             rel="noreferrer"
-            className="ml-4 px-3 py-2 rounded-md text-white text-sm flex items-center gap-2"
+            className="flex-shrink-0 px-3 py-2 rounded-md text-white text-sm flex items-center gap-2"
             style={{ backgroundColor: "var(--accent)" }}
           >
             <Download size={16} />
             View
           </a>
         ) : (
-          <div className="ml-4 px-3 py-2 rounded-md bg-gray-200 text-gray-600 text-sm">
+          <div className="flex-shrink-0 px-3 py-2 rounded-md bg-gray-200 text-gray-600 text-sm whitespace-nowrap">
             Coming Soon
           </div>
         )}
@@ -71,6 +195,7 @@ function TimelineItem({ phase, duration, description }) {
 export default function ProjectDetails() {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
+  const [openDoc, setOpenDoc] = useState(null);
 
   if (!project) {
     return (
@@ -85,6 +210,7 @@ export default function ProjectDetails() {
 
   return (
     <div className="bg-white">
+      {openDoc && <DocModal doc={openDoc} onClose={() => setOpenDoc(null)} />}
       {/* Breadcrumb */}
       <div className="bg-gray-50 border-b">
         <div className="container mx-auto px-6 py-3">
@@ -179,7 +305,7 @@ export default function ProjectDetails() {
           <SectionHeading title="BA Documentation & Artifacts" icon={FileText} />
           <div className="grid md:grid-cols-2 gap-4">
             {Object.entries(project.documentation).map(([key, doc]) => (
-              <DocumentCard key={key} doc={doc} />
+              <DocumentCard key={key} doc={doc} onOpen={setOpenDoc} />
             ))}
           </div>
         </section>
@@ -201,7 +327,7 @@ export default function ProjectDetails() {
 
         {/* BA Skills & Tools */}
         <section className="mb-16">
-          <SectionHeading title="Business Analysis Skills & Tools" icon={Briefcase} />
+          <SectionHeading title="Skills & Tools Applied" icon={Briefcase} />
           
           <div className="grid md:grid-cols-2 gap-8">
             {/* BA Skills */}

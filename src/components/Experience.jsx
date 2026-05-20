@@ -21,32 +21,71 @@ export default function Experience() {
                 style={{ backgroundColor: "var(--accent)" }}
               />
 
-              <div className="bg-white p-6 rounded-lg shadow-md flex gap-4">
-                {/* Logo on the left */}
-                <div className="flex-shrink-0">
-                  {job.logo ? (
-                    <img 
-                      src={`/images/experience/${job.logo}`} 
-                      alt={job.company} 
-                      className="h-20 w-20 object-contain"
-                    />
-                  ) : (
-                    <div className="h-20 w-20 bg-gray-200 rounded flex items-center justify-center text-gray-400">
-                      Logo
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                {/* Header */}
+                <div className="p-5 flex gap-4 items-start">
+                  <div className="flex-shrink-0">
+                    {job.logo ? (
+                      <img
+                        src={`/images/experience/${job.logo}`}
+                        alt={job.company}
+                        className="h-14 w-14 object-contain"
+                      />
+                    ) : (
+                      <div className="h-14 w-14 bg-gray-100 rounded flex items-center justify-center text-gray-400 text-xs">
+                        Logo
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                      <h3 className="text-lg font-bold leading-tight">{job.role}</h3>
+                      <span className="text-xs font-medium px-3 py-1 rounded-full bg-blue-100 text-blue-800 self-start sm:self-auto whitespace-nowrap">
+                        {job.period}
+                      </span>
                     </div>
-                  )}
+                    <p className="text-gray-500 text-sm mt-0.5">{job.company}</p>
+                  </div>
                 </div>
 
-                {/* Content on the right */}
-                <div className="flex-1">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-2">
-                    <h3 className="text-xl font-bold">{job.role}</h3>
-                    <span className="text-sm font-medium px-3 py-1 rounded-full bg-blue-100 text-blue-800">
-                      {job.period}
-                    </span>
+                {/* Two bubble cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 border-t border-gray-100">
+                  {/* What I Do */}
+                  <div className="p-4 sm:border-r border-gray-100 border-b sm:border-b-0">
+                    <p
+                      className="text-xs font-bold uppercase tracking-widest mb-3"
+                      style={{ color: "var(--accent)" }}
+                    >
+                      {job.period.includes("Current") ? "What I Do" : "What I Did"}
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {job.whatIDo.map((item, i) => (
+                        <span
+                          key={i}
+                          className="px-2.5 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                  <h4 className="text-gray-600 font-medium mb-3">{job.company}</h4>
-                  <p className="text-gray-700">{job.description}</p>
+
+                  {/* What I've Learned */}
+                  <div className="p-4">
+                    <p className="text-xs font-bold uppercase tracking-widest mb-3 text-emerald-600">
+                      What I&apos;ve Learned
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {job.whatILearned.map((item, i) => (
+                        <span
+                          key={i}
+                          className="px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

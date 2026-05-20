@@ -1,5 +1,6 @@
 import { CONFIG } from "../data/config";
 import { CheckCircle, Target, AlertCircle, TrendingUp, Zap } from "lucide-react";
+import TechStrip from "./TechStrip";
 
 export default function About() {
   const points = [
@@ -75,6 +76,9 @@ export default function About() {
             </div>
           </div>
         </div>
+
+        {/* Tech Strip */}
+        <TechStrip />
 
         {/* Detailed Skills Grid */}
         <div className="mb-8">
