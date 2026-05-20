@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <!-- Decorative circles -->
+  <circle cx="1100" cy="-50" r="200" fill="white" fill-opacity="0.04"/>
+  <circle cx="100" cy="450" r="180" fill="white" fill-opacity="0.04"/>
+  <!-- Chat bubbles -->
+  <rect x="120" y="100" width="260" height="70" rx="16" fill="white" fill-opacity="0.15"/>
+  <polygon points="135,170 120,190 160,170" fill="white" fill-opacity="0.15"/>
+  <rect x="130" y="115" width="180" height="10" rx="4" fill="white" fill-opacity="0.5"/>
+  <rect x="130" y="133" width="220" height="10" rx="4" fill="white" fill-opacity="0.35"/>
+  <rect x="130" y="151" width="140" height="10" rx="4" fill="white" fill-opacity="0.25"/>
+
+  <rect x="820" y="140" width="260" height="70" rx="16" fill="white" fill-opacity="0.15"/>
+  <polygon points="1065,210 1080,230 1040,210" fill="white" fill-opacity="0.15"/>
+  <rect x="830" y="155" width="200" height="10" rx="4" fill="white" fill-opacity="0.5"/>
+  <rect x="830" y="173" width="230" height="10" rx="4" fill="white" fill-opacity="0.35"/>
+  <rect x="830" y="191" width="160" height="10" rx="4" fill="white" fill-opacity="0.25"/>
+
+  <rect x="200" y="220" width="280" height="80" rx="16" fill="white" fill-opacity="0.12"/>
+  <polygon points="215,300 200,320 255,300" fill="white" fill-opacity="0.12"/>
+  <rect x="214" y="237" width="240" height="10" rx="4" fill="white" fill-opacity="0.45"/>
+  <rect x="214" y="255" width="200" height="10" rx="4" fill="white" fill-opacity="0.3"/>
+  <rect x="214" y="273" width="160" height="10" rx="4" fill="white" fill-opacity="0.2"/>
+
+  <!-- AI brain/network icon center -->
+  <circle cx="600" cy="180" r="50" fill="white" fill-opacity="0.1" stroke="white" stroke-opacity="0.3" stroke-width="1.5"/>
+  <circle cx="600" cy="180" r="8" fill="white" fill-opacity="0.6"/>
+  <circle cx="560" cy="155" r="5" fill="white" fill-opacity="0.4"/>
+  <circle cx="640" cy="155" r="5" fill="white" fill-opacity="0.4"/>
+  <circle cx="560" cy="205" r="5" fill="white" fill-opacity="0.4"/>
+  <circle cx="640" cy="205" r="5" fill="white" fill-opacity="0.4"/>
+  <line x1="600" y1="180" x2="560" y2="155" stroke="white" stroke-opacity="0.3" stroke-width="1.5"/>
+  <line x1="600" y1="180" x2="640" y2="155" stroke="white" stroke-opacity="0.3" stroke-width="1.5"/>
+  <line x1="600" y1="180" x2="560" y2="205" stroke="white" stroke-opacity="0.3" stroke-width="1.5"/>
+  <line x1="600" y1="180" x2="640" y2="205" stroke="white" stroke-opacity="0.3" stroke-width="1.5"/>
+  <line x1="560" y1="155" x2="640" y2="155" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
+  <line x1="560" y1="205" x2="640" y2="205" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Stats bottom -->
+  <rect x="320" y="320" width="140" height="44" rx="8" fill="white" fill-opacity="0.12"/>
+  <text x="390" y="337" text-anchor="middle" fill="white" fill-opacity="0.6" font-size="9" font-family="sans-serif">RESOLUTION RATE</text>
+  <text x="390" y="354" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="sans-serif">75%</text>
+  <rect x="480" y="320" width="140" height="44" rx="8" fill="white" fill-opacity="0.12"/>
+  <text x="550" y="337" text-anchor="middle" fill="white" fill-opacity="0.6" font-size="9" font-family="sans-serif">SATISFACTION</text>
+  <text x="550" y="354" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="sans-serif">92%</text>
+  <rect x="640" y="320" width="140" height="44" rx="8" fill="white" fill-opacity="0.12"/>
+  <text x="710" y="337" text-anchor="middle" fill="white" fill-opacity="0.6" font-size="9" font-family="sans-serif">TICKET REDUCTION</text>
+  <text x="710" y="354" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="sans-serif">60%</text>
+  <rect x="800" y="320" width="140" height="44" rx="8" fill="white" fill-opacity="0.12"/>
+  <text x="870" y="337" text-anchor="middle" fill="white" fill-opacity="0.6" font-size="9" font-family="sans-serif">RESPONSE TIME</text>
+  <text x="870" y="354" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="sans-serif">2s</text>
+</svg>

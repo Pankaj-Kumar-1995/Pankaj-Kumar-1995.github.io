@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46"/>
+      <stop offset="100%" style="stop-color:#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <!-- Connection lines between stores -->
+  <line x1="200" y1="190" x2="400" y2="150" stroke="white" stroke-opacity="0.15" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="200" y1="190" x2="400" y2="230" stroke="white" stroke-opacity="0.15" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="200" y1="190" x2="400" y2="310" stroke="white" stroke-opacity="0.12" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="200" y1="190" x2="400" y2="90" stroke="white" stroke-opacity="0.12" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <!-- Central admin hub -->
+  <circle cx="200" cy="190" r="48" fill="white" fill-opacity="0.1" stroke="white" stroke-opacity="0.3" stroke-width="2"/>
+  <circle cx="200" cy="190" r="32" fill="white" fill-opacity="0.12"/>
+  <text x="200" y="183" text-anchor="middle" fill="white" font-size="9" font-weight="bold" font-family="sans-serif">SUPER</text>
+  <text x="200" y="196" text-anchor="middle" fill="white" font-size="9" font-weight="bold" font-family="sans-serif">ADMIN</text>
+  <text x="200" y="209" text-anchor="middle" fill="white" font-size="8" fill-opacity="0.7" font-family="sans-serif">Dashboard</text>
+  <!-- Vertical module cards -->
+  <!-- Retail -->
+  <rect x="390" y="66" width="130" height="68" rx="10" fill="white" fill-opacity="0.12"/>
+  <rect x="400" y="74" width="20" height="20" rx="4" fill="#fbbf24" fill-opacity="0.6"/>
+  <text x="430" y="87" fill="white" font-size="11" font-weight="bold" font-family="sans-serif">Retail</text>
+  <text x="400" y="108" fill="white" fill-opacity="0.6" font-size="8" font-family="sans-serif">Inventory • POS • Orders</text>
+  <text x="400" y="121" fill="white" fill-opacity="0.6" font-size="8" font-family="sans-serif">Multi-store management</text>
+  <!-- Restaurant -->
+  <rect x="390" y="150" width="130" height="68" rx="10" fill="white" fill-opacity="0.12"/>
+  <rect x="400" y="158" width="20" height="20" rx="4" fill="#f87171" fill-opacity="0.6"/>
+  <text x="430" y="171" fill="white" font-size="11" font-weight="bold" font-family="sans-serif">Restaurant</text>
+  <text x="400" y="192" fill="white" fill-opacity="0.6" font-size="8" font-family="sans-serif">Menu • KDS • Orders</text>
+  <text x="400" y="205" fill="white" fill-opacity="0.6" font-size="8" font-family="sans-serif">Kitchen display system</text>
+  <!-- Delivery -->
+  <rect x="390" y="234" width="130" height="68" rx="10" fill="white" fill-opacity="0.12"/>
+  <rect x="400" y="242" width="20" height="20" rx="4" fill="#60a5fa" fill-opacity="0.6"/>
+  <text x="430" y="255" fill="white" font-size="11" font-weight="bold" font-family="sans-serif">Delivery</text>
+  <text x="400" y="276" fill="white" fill-opacity="0.6" font-size="8" font-family="sans-serif">Dispatch • Tracking • POD</text>
+  <text x="400" y="289" fill="white" fill-opacity="0.6" font-size="8" font-family="sans-serif">Real-time driver map</text>
+  <!-- Taxi -->
+  <rect x="390" y="318" width="130" height="50" rx="10" fill="white" fill-opacity="0.12"/>
+  <rect x="400" y="326" width="20" height="18" rx="4" fill="#a78bfa" fill-opacity="0.6"/>
+  <text x="430" y="339" fill="white" font-size="11" font-weight="bold" font-family="sans-serif">Taxi / Ride</text>
+  <text x="400" y="357" fill="white" fill-opacity="0.6" font-size="8" font-family="sans-serif">Booking • Fare • Fleet</text>
+
+  <!-- Center dashboard preview -->
+  <rect x="560" y="60" width="380" height="280" rx="12" fill="white" fill-opacity="0.08"/>
+  <rect x="560" y="60" width="380" height="32" rx="12" fill="white" fill-opacity="0.1"/>
+  <text x="750" y="81" text-anchor="middle" fill="white" fill-opacity="0.7" font-size="10" font-family="sans-serif">HYPERLOCAL CLOUD — LIVE DASHBOARD</text>
+  <!-- KPI row in dashboard -->
+  <rect x="575" y="104" width="80" height="50" rx="6" fill="white" fill-opacity="0.08"/>
+  <text x="615" y="122" text-anchor="middle" fill="white" fill-opacity="0.5" font-size="7" font-family="sans-serif">ORDERS TODAY</text>
+  <text x="615" y="140" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="sans-serif">347</text>
+  <rect x="665" y="104" width="80" height="50" rx="6" fill="white" fill-opacity="0.08"/>
+  <text x="705" y="122" text-anchor="middle" fill="white" fill-opacity="0.5" font-size="7" font-family="sans-serif">REVENUE</text>
+  <text x="705" y="140" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="sans-serif">$8.4k</text>
+  <rect x="755" y="104" width="80" height="50" rx="6" fill="white" fill-opacity="0.08"/>
+  <text x="795" y="122" text-anchor="middle" fill="white" fill-opacity="0.5" font-size="7" font-family="sans-serif">DRIVERS</text>
+  <text x="795" y="140" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="sans-serif">42</text>
+  <rect x="845" y="104" width="80" height="50" rx="6" fill="white" fill-opacity="0.08"/>
+  <text x="885" y="122" text-anchor="middle" fill="white" fill-opacity="0.5" font-size="7" font-family="sans-serif">AVG DELIVERY</text>
+  <text x="885" y="140" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="sans-serif">28m</text>
+  <!-- Revenue bar chart -->
+  <text x="575" y="172" fill="white" fill-opacity="0.5" font-size="8" font-family="sans-serif">Revenue by Vertical</text>
+  <rect x="575" y="204" width="60" height="55" rx="3" fill="#fbbf24" fill-opacity="0.5"/>
+  <rect x="645" y="220" width="60" height="39" rx="3" fill="#f87171" fill-opacity="0.5"/>
+  <rect x="715" y="214" width="60" height="45" rx="3" fill="#60a5fa" fill-opacity="0.5"/>
+  <rect x="785" y="230" width="60" height="29" rx="3" fill="#a78bfa" fill-opacity="0.5"/>
+  <text x="605" y="272" text-anchor="middle" fill="white" fill-opacity="0.6" font-size="7" font-family="sans-serif">Retail</text>
+  <text x="675" y="272" text-anchor="middle" fill="white" fill-opacity="0.6" font-size="7" font-family="sans-serif">Restaurant</text>
+  <text x="745" y="272" text-anchor="middle" fill="white" fill-opacity="0.6" font-size="7" font-family="sans-serif">Delivery</text>
+  <text x="815" y="272" text-anchor="middle" fill="white" fill-opacity="0.6" font-size="7" font-family="sans-serif">Taxi</text>
+  <!-- White label badge -->
+  <rect x="575" y="290" width="350" height="28" rx="6" fill="white" fill-opacity="0.1"/>
+  <text x="750" y="308" text-anchor="middle" fill="white" fill-opacity="0.7" font-size="10" font-family="sans-serif">⚡ White-Label Ready — Deploy your brand in &lt;30 minutes</text>
+
+  <!-- Right metrics panel -->
+  <rect x="980" y="60" width="180" height="280" rx="12" fill="white" fill-opacity="0.08"/>
+  <text x="1070" y="88" text-anchor="middle" fill="white" fill-opacity="0.5" font-size="9" font-family="sans-serif">QA OUTCOME</text>
+  <text x="1070" y="130" text-anchor="middle" fill="#34d399" font-size="32" font-weight="bold" font-family="sans-serif">0</text>
+  <text x="1070" y="150" text-anchor="middle" fill="white" fill-opacity="0.6" font-size="9" font-family="sans-serif">P1/P2 defects at go-live</text>
+  <line x1="995" y1="168" x2="1145" y2="168" stroke="white" stroke-opacity="0.1" stroke-width="1"/>
+  <text x="1070" y="200" text-anchor="middle" fill="white" font-size="24" font-weight="bold" font-family="sans-serif">284</text>
+  <text x="1070" y="218" text-anchor="middle" fill="white" fill-opacity="0.6" font-size="9" font-family="sans-serif">Total defects logged</text>
+  <text x="1070" y="234" text-anchor="middle" fill="white" fill-opacity="0.4" font-size="8" font-family="sans-serif">100% resolved before deploy</text>
+  <line x1="995" y1="248" x2="1145" y2="248" stroke="white" stroke-opacity="0.1" stroke-width="1"/>
+  <text x="1070" y="278" text-anchor="middle" fill="white" font-size="24" font-weight="bold" font-family="sans-serif">3</text>
+  <text x="1070" y="296" text-anchor="middle" fill="white" fill-opacity="0.6" font-size="9" font-family="sans-serif">Client deployments</text>
+  <text x="1070" y="312" text-anchor="middle" fill="white" fill-opacity="0.4" font-size="8" font-family="sans-serif">All renewed contracts</text>
+  <!-- Bottom -->
+  <rect x="80" y="360" width="1060" height="24" rx="6" fill="white" fill-opacity="0.06"/>
+  <text x="600" y="376" text-anchor="middle" fill="white" fill-opacity="0.5" font-size="9" font-family="sans-serif">Suffescom Hyperlocal Cloud Platform  •  API Testing  •  E2E Validation  •  Cross-Module Integration  •  White-Label QA</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff1f2"/>
+      <stop offset="60%" style="stop-color:#fce7f3"/>
+      <stop offset="100%" style="stop-color:#ede9fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+
+  <!-- Coles SAP branding top-right -->
+  <rect x="960" y="20" width="210" height="46" rx="10" fill="white" fill-opacity="0.7"/>
+  <text x="978" y="50" fill="#e11d48" font-size="22" font-weight="900" font-family="sans-serif">coles</text>
+  <rect x="1052" y="24" width="58" height="38" rx="6" fill="#0070f2"/>
+  <text x="1081" y="50" text-anchor="middle" fill="white" font-size="20" font-weight="bold" font-family="sans-serif">SAP</text>
+  <text x="1155" y="33" fill="#666" font-size="9" font-family="sans-serif">®</text>
+
+  <!-- SWOT block (left) -->
+  <rect x="60" y="70" width="300" height="270" rx="12" fill="white" fill-opacity="0.6"/>
+  <text x="210" y="98" text-anchor="middle" fill="#1e1b4b" font-size="14" font-weight="bold" font-family="sans-serif">SWOT Analysis</text>
+  <!-- S -->
+  <rect x="75" y="108" width="130" height="100" rx="6" fill="#1d4ed8" fill-opacity="0.85"/>
+  <text x="140" y="152" text-anchor="middle" fill="white" font-size="36" font-weight="bold" font-family="sans-serif">S</text>
+  <text x="140" y="172" text-anchor="middle" fill="white" fill-opacity="0.8" font-size="8" font-family="sans-serif">STRENGTHS</text>
+  <text x="140" y="184" text-anchor="middle" fill="white" fill-opacity="0.7" font-size="7" font-family="sans-serif">Brand • Workforce</text>
+  <text x="140" y="194" text-anchor="middle" fill="white" fill-opacity="0.7" font-size="7" font-family="sans-serif">Customer base</text>
+  <!-- W -->
+  <rect x="215" y="108" width="130" height="100" rx="6" fill="#f9a8d4" fill-opacity="0.9"/>
+  <text x="280" y="152" text-anchor="middle" fill="#9f1239" font-size="36" font-weight="bold" font-family="sans-serif">W</text>
+  <text x="280" y="172" text-anchor="middle" fill="#9f1239" fill-opacity="0.8" font-size="8" font-family="sans-serif">WEAKNESSES</text>
+  <text x="280" y="184" text-anchor="middle" fill="#9f1239" fill-opacity="0.7" font-size="7" font-family="sans-serif">Legacy ERP</text>
+  <text x="280" y="194" text-anchor="middle" fill="#9f1239" fill-opacity="0.7" font-size="7" font-family="sans-serif">Operational silos</text>
+  <!-- O -->
+  <rect x="75" y="216" width="130" height="100" rx="6" fill="#16a34a" fill-opacity="0.8"/>
+  <text x="140" y="260" text-anchor="middle" fill="white" font-size="36" font-weight="bold" font-family="sans-serif">O</text>
+  <text x="140" y="280" text-anchor="middle" fill="white" fill-opacity="0.8" font-size="8" font-family="sans-serif">OPPORTUNITIES</text>
+  <text x="140" y="292" text-anchor="middle" fill="white" fill-opacity="0.7" font-size="7" font-family="sans-serif">AI • Cloud ERP</text>
+  <text x="140" y="302" text-anchor="middle" fill="white" fill-opacity="0.7" font-size="7" font-family="sans-serif">Data security</text>
+  <!-- T -->
+  <rect x="215" y="216" width="130" height="100" rx="6" fill="#e11d48" fill-opacity="0.8"/>
+  <text x="280" y="260" text-anchor="middle" fill="white" font-size="36" font-weight="bold" font-family="sans-serif">T</text>
+  <text x="280" y="280" text-anchor="middle" fill="white" fill-opacity="0.8" font-size="8" font-family="sans-serif">THREATS</text>
+  <text x="280" y="292" text-anchor="middle" fill="white" fill-opacity="0.7" font-size="7" font-family="sans-serif">Competition</text>
+  <text x="280" y="302" text-anchor="middle" fill="white" fill-opacity="0.7" font-size="7" font-family="sans-serif">Supply chain</text>
+
+  <!-- PESTLE panel (center) -->
+  <rect x="390" y="70" width="350" height="270" rx="12" fill="white" fill-opacity="0.55"/>
+  <text x="565" y="98" text-anchor="middle" fill="#1e1b4b" font-size="14" font-weight="bold" font-family="sans-serif">PESTLE Analysis</text>
+  <text x="410" y="124" fill="#e11d48" font-size="10" font-weight="bold" font-family="sans-serif">Political</text>
+  <text x="410" y="137" fill="#374151" font-size="9" font-family="sans-serif">Cybersecurity &amp; compliance mandates</text>
+  <line x1="405" y1="143" x2="725" y2="143" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="410" y="158" fill="#e11d48" font-size="10" font-weight="bold" font-family="sans-serif">Economic</text>
+  <text x="410" y="171" fill="#374151" font-size="9" font-family="sans-serif">Cost pressure &amp; supply chain resilience</text>
+  <line x1="405" y1="177" x2="725" y2="177" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="410" y="192" fill="#e11d48" font-size="10" font-weight="bold" font-family="sans-serif">Social</text>
+  <text x="410" y="205" fill="#374151" font-size="9" font-family="sans-serif">Omnichannel shopping &amp; personalisation</text>
+  <line x1="405" y1="211" x2="725" y2="211" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="410" y="226" fill="#e11d48" font-size="10" font-weight="bold" font-family="sans-serif">Technological</text>
+  <text x="410" y="239" fill="#374151" font-size="9" font-family="sans-serif">Cloud adoption &amp; AI integration</text>
+  <line x1="405" y1="245" x2="725" y2="245" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="410" y="260" fill="#e11d48" font-size="10" font-weight="bold" font-family="sans-serif">Legal</text>
+  <text x="410" y="273" fill="#374151" font-size="9" font-family="sans-serif">Data privacy &amp; ethical sourcing laws</text>
+  <line x1="405" y1="279" x2="725" y2="279" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="410" y="294" fill="#e11d48" font-size="10" font-weight="bold" font-family="sans-serif">Environmental</text>
+  <text x="410" y="307" fill="#374151" font-size="9" font-family="sans-serif">Sustainability &amp; ESG commitments</text>
+
+  <!-- Key metrics (right) -->
+  <rect x="770" y="70" width="390" height="120" rx="12" fill="white" fill-opacity="0.55"/>
+  <text x="790" y="98" fill="#1e1b4b" font-size="11" font-weight="bold" font-family="sans-serif">TRANSFORMATION OUTCOMES</text>
+  <text x="840" y="138" text-anchor="middle" fill="#0070f2" font-size="28" font-weight="bold" font-family="sans-serif">$45M</text>
+  <text x="840" y="155" text-anchor="middle" fill="#374151" font-size="8" font-family="sans-serif">Net 5yr savings</text>
+  <text x="960" y="138" text-anchor="middle" fill="#0070f2" font-size="28" font-weight="bold" font-family="sans-serif">800+</text>
+  <text x="960" y="155" text-anchor="middle" fill="#374151" font-size="8" font-family="sans-serif">Stores impacted</text>
+  <text x="1100" y="138" text-anchor="middle" fill="#0070f2" font-size="28" font-weight="bold" font-family="sans-serif">12→1</text>
+  <text x="1100" y="155" text-anchor="middle" fill="#374151" font-size="8" font-family="sans-serif">Systems consolidated</text>
+
+  <!-- Next steps panel -->
+  <rect x="770" y="210" width="390" height="130" rx="12" fill="white" fill-opacity="0.55"/>
+  <text x="790" y="235" fill="#1e1b4b" font-size="11" font-weight="bold" font-family="sans-serif">NEXT STEPS</text>
+  <text x="810" y="260" fill="#374151" font-size="9" font-family="sans-serif">▸  Continue ERP rollout across business units</text>
+  <text x="810" y="278" fill="#374151" font-size="9" font-family="sans-serif">▸  Leverage AI/analytics to optimise operations</text>
+  <text x="810" y="296" fill="#374151" font-size="9" font-family="sans-serif">▸  Monitor KPIs and ROI from digital transformation</text>
+  <text x="810" y="314" fill="#374151" font-size="9" font-family="sans-serif">▸  Plan enhancements using SAP BTP and Signavio</text>
+
+  <!-- Bottom metrics -->
+  <rect x="60" y="360" width="1100" height="28" rx="8" fill="white" fill-opacity="0.4"/>
+  <text x="180" y="379" text-anchor="middle" fill="#374151" font-size="9" font-weight="bold" font-family="sans-serif">Period Close: 8d → 3d</text>
+  <text x="380" y="379" text-anchor="middle" fill="#374151" font-size="9" font-weight="bold" font-family="sans-serif">PO Errors: 35% → 5%</text>
+  <text x="580" y="379" text-anchor="middle" fill="#374151" font-size="9" font-weight="bold" font-family="sans-serif">Inventory Accuracy: 99.2%</text>
+  <text x="780" y="379" text-anchor="middle" fill="#374151" font-size="9" font-weight="bold" font-family="sans-serif">IT Savings: $18M/yr</text>
+  <text x="980" y="379" text-anchor="middle" fill="#374151" font-size="9" font-weight="bold" font-family="sans-serif">Users: 5,700+</text>
+</svg>

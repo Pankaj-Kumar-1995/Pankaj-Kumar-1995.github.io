@@ -15,7 +15,7 @@ export const projects = [
     description:
       "Forecasted non-emergency service demand using machine learning and clustering techniques to support city resource planning.",
     tools: ["Python", "Azure ML", "LSTM", "DBSCAN", "Power BI"],
-    coverImage: "/images/projects/nyc311-cover.jpg",
+    coverImage: "/images/projects/nyc311-cover.svg",
     duration: "6 months",
     teamSize: "8 members",
     role: "Business Analyst / Data Requirements Specialist",
@@ -162,8 +162,10 @@ export const projects = [
     ],
 
     screenshots: [
-      "/images/projects/nyc311-dashboard.png",
-      "/images/projects/nyc311-forecast.png"
+      "/images/projects/nyc311-model-performance.png",
+      "/images/projects/nyc311-cluster-map.png",
+      "/images/projects/nyc311-borough-map.png",
+      "/images/projects/nyc311-noise-distribution.png"
     ]
   },
 
@@ -175,7 +177,7 @@ export const projects = [
     description:
       "Designed BA artefacts and AI solution concept using Microsoft Copilot to streamline student support workflows.",
     tools: ["Requirements", "User Journeys", "Responsible AI"],
-    coverImage: "/images/projects/rmit-cover.jpg",
+    coverImage: "/images/projects/rmit-cover.svg",
     duration: "3 months",
     teamSize: "5 members",
     role: "Business Analyst / AI Solution Designer",
@@ -324,7 +326,7 @@ export const projects = [
     description:
       "Analysed ERP transformation scope, risks, stakeholders, and expected benefits in a retail context.",
     tools: ["ERP", "Process Mapping", "Risk Analysis"],
-    coverImage: "/images/projects/coles-cover.jpg",
+    coverImage: "/images/projects/coles-cover.svg",
     duration: "8 weeks",
     teamSize: "3 members",
     role: "Business Analyst / ERP Strategy Analyst",
@@ -472,7 +474,7 @@ export const projects = [
     description:
       "Developed accessibility and inclusivity solutions for DiDi's rideshare services in Melbourne, addressing service gaps for passengers with disabilities, parents, and service animal owners.",
     tools: ["Market Research", "Competitor Analysis", "Business Model Canvas", "Process Mapping", "PowerPoint"],
-    coverImage: "/images/projects/didi-cover.jpg",
+    coverImage: "/images/projects/didi-cover.svg",
     duration: "8-12 weeks",
     teamSize: "4 members",
     role: "Business Analyst / Strategy Consultant",
@@ -732,7 +734,7 @@ export const projects = [
     category: "qa",
     description: "Led hardware-software integration testing, 5G network validation, root cause analysis, and test documentation for OPPO's flagship Reno 7 and Find X3 smartphone lines.",
     tools: ["Test Strategy", "5G Testing", "Root Cause Analysis", "Kaizen", "Android QA"],
-    coverImage: "/images/projects/oppo-cover.jpg",
+    coverImage: "/images/projects/oppo-cover.svg",
     duration: "22 months",
     teamSize: "12 members",
     role: "Testing Engineer / QA Specialist",
@@ -875,7 +877,7 @@ export const projects = [
     category: "qa",
     description: "QA and product validation for Suffescom's white-label SaaS platform enabling a single dashboard to manage retail, restaurant, delivery, and taxi businesses for hyperlocal entrepreneurs.",
     tools: ["API Testing", "User Stories", "E2E Testing", "Agile QA", "Customer Journey"],
-    coverImage: "/images/projects/suffescom-cover.jpg",
+    coverImage: "/images/projects/hyperlocal-cover.svg",
     duration: "6 months",
     teamSize: "5 members",
     role: "Quality Analyst / Product QA",

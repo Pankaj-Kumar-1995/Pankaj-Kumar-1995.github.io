@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { CONFIG } from "../data/config";
 import { scrollToId } from "../utils/scrollTo";
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -9,16 +9,6 @@ export default function Hero() {
       <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-12 items-center">
         {/* Left — text */}
         <div>
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45 }}
-            className="inline-flex items-center gap-1.5 text-sm text-gray-500 mb-4"
-          >
-            <MapPin size={14} />
-            {CONFIG.location}
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
