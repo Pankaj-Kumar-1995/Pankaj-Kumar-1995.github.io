@@ -698,7 +698,6 @@ export const projects = [
       competitiveAdvantage: "Only comprehensive accessibility solution vs. fragmented competitor offerings"
     }
   },
-];
 
   // Add freelancing projects below this line
   // {
