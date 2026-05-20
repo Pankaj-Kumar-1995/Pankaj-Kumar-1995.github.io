@@ -23,17 +23,17 @@ export default function Experience() {
 
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 {/* Header */}
-                <div className="p-5 flex gap-4 items-start">
-                  <div className="flex-shrink-0">
+                <div className="p-5 flex gap-4 items-center">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-lg border border-gray-100 bg-white shadow-sm flex items-center justify-center p-1">
                     {job.logo ? (
                       <img
                         src={`/images/experience/${job.logo}`}
                         alt={job.company}
-                        className="h-14 w-14 object-contain"
+                        className="w-full h-full object-contain"
                       />
                     ) : (
-                      <div className="h-14 w-14 bg-gray-100 rounded flex items-center justify-center text-gray-400 text-xs">
-                        Logo
+                      <div className="w-full h-full bg-gray-100 rounded flex items-center justify-center text-gray-400 text-xs font-bold">
+                        {job.company.charAt(0)}
                       </div>
                     )}
                   </div>

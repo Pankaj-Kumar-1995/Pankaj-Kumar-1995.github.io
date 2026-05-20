@@ -871,7 +871,7 @@ export const projects = [
   {
     id: 6,
     slug: "suffescom-hyperlocal-cloud",
-    title: "Suffescom Hyperlocal Cloud — Multi-Vertical Business Platform",
+    title: "Hyperlocal Cloud — Multi-Vertical Business Platform",
     category: "qa",
     description: "QA and product validation for Suffescom's white-label SaaS platform enabling a single dashboard to manage retail, restaurant, delivery, and taxi businesses for hyperlocal entrepreneurs.",
     tools: ["API Testing", "User Stories", "E2E Testing", "Agile QA", "Customer Journey"],

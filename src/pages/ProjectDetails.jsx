@@ -220,23 +220,46 @@ export default function ProjectDetails() {
         </div>
       </div>
 
-      {/* Cover Image & Header */}
-      <div className="relative h-96 bg-gradient-to-br from-blue-600 to-blue-800 overflow-hidden">
-        {project.coverImage && (
-          <img
-            src={project.coverImage}
-            alt={project.title}
-            className="w-full h-full object-cover opacity-70"
-          />
-        )}
-        <div className="absolute inset-0 bg-black bg-opacity-30" />
-      </div>
+      {/* Cover Banner */}
+      {(() => {
+        const gradients = {
+          analytics:   "from-blue-700 to-cyan-600",
+          enterprise:  "from-purple-700 to-violet-600",
+          strategy:    "from-emerald-700 to-teal-600",
+          qa:          "from-orange-600 to-amber-500",
+          freelancing: "from-pink-700 to-rose-500",
+        };
+        const g = gradients[project.category] || "from-blue-700 to-blue-900";
+        return (
+          <div className={`relative h-56 md:h-64 bg-gradient-to-br ${g} overflow-hidden`}>
+            {project.coverImage && (
+              <img
+                src={project.coverImage}
+                alt={project.title}
+                className="w-full h-full object-cover opacity-30 mix-blend-overlay"
+                onError={(e) => { e.target.style.display = "none"; }}
+              />
+            )}
+            {/* Decorative shapes */}
+            <div className="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-white/5" />
+            <div className="absolute -bottom-8 -left-8 w-36 h-36 rounded-full bg-white/5" />
+            {/* Title overlay */}
+            <div className="absolute inset-0 flex flex-col justify-end px-8 pb-8">
+              <span className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-2">
+                {project.category.replace("-", " & ")}
+              </span>
+              <h1 className="text-2xl md:text-3xl font-bold text-white leading-tight max-w-3xl">
+                {project.title}
+              </h1>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Main Content */}
-      <div className="container mx-auto px-6 py-16 max-w-5xl">
-        {/* Project Title & Description */}
+      <div className="container mx-auto px-6 py-12 max-w-5xl">
+        {/* Overview & Metrics */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
             {project.summary.overview}
           </p>

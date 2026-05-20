@@ -1,29 +1,52 @@
 import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { projects, projectCategories } from "../data/projects";
+import { ArrowRight } from "lucide-react";
+
+const categoryMeta = {
+  analytics:   { label: "Analytics",     gradient: "from-blue-600 to-cyan-500" },
+  enterprise:  { label: "Enterprise",    gradient: "from-purple-600 to-violet-500" },
+  strategy:    { label: "Strategy",      gradient: "from-emerald-600 to-teal-500" },
+  qa:          { label: "QA & Testing",  gradient: "from-orange-500 to-amber-400" },
+  freelancing: { label: "Freelancing",   gradient: "from-pink-600 to-rose-400" },
+};
 
 function ProjectCard({ p, navigate }) {
-  return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-2">{p.title}</h3>
-        <p className="text-gray-700 mb-4">{p.description}</p>
+  const meta = categoryMeta[p.category] || { label: p.category, gradient: "from-slate-600 to-slate-500" };
 
-        <div className="flex flex-wrap gap-2 mb-5">
-          {p.tools.map((t) => (
-            <span key={t} className="px-3 py-1 text-sm rounded-full bg-blue-50 text-blue-700">
+  return (
+    <div
+      className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col cursor-pointer group"
+      onClick={() => navigate(`/projects/${p.slug}`)}
+    >
+      {/* Gradient header */}
+      <div className={`bg-gradient-to-r ${meta.gradient} px-5 pt-5 pb-8 relative`}>
+        <span className="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-white/20 text-white border border-white/30 mb-3">
+          {meta.label}
+        </span>
+        <h3 className="text-lg font-bold text-white leading-snug pr-6">{p.title}</h3>
+        {/* Decorative circle */}
+        <div className="absolute right-4 bottom-0 translate-y-1/2 w-12 h-12 rounded-full bg-white/10 border-2 border-white/20 flex items-center justify-center">
+          <ArrowRight size={18} className="text-white group-hover:translate-x-0.5 transition-transform" />
+        </div>
+      </div>
+
+      {/* Body */}
+      <div className="px-5 pt-5 pb-5 flex flex-col flex-1">
+        <p className="text-sm text-gray-600 leading-relaxed mb-4 line-clamp-3">{p.description}</p>
+
+        <div className="flex flex-wrap gap-1.5 mt-auto">
+          {p.tools.slice(0, 4).map((t) => (
+            <span key={t} className="px-2.5 py-0.5 text-xs rounded-full bg-gray-100 text-gray-600 border border-gray-200">
               {t}
             </span>
           ))}
+          {p.tools.length > 4 && (
+            <span className="px-2.5 py-0.5 text-xs rounded-full bg-gray-100 text-gray-500">
+              +{p.tools.length - 4} more
+            </span>
+          )}
         </div>
-
-        <button
-          onClick={() => navigate(`/projects/${p.slug}`)}
-          className="px-4 py-2 rounded-md text-white"
-          style={{ backgroundColor: "var(--accent)" }}
-        >
-          More Details
-        </button>
       </div>
     </div>
   );
@@ -38,7 +61,7 @@ function ProjectGrid({ items, navigate }) {
     );
   }
   return (
-    <div className="grid md:grid-cols-2 gap-8">
+    <div className="grid md:grid-cols-2 gap-6">
       {items.map((p) => (
         <ProjectCard key={p.id} p={p} navigate={navigate} />
       ))}
@@ -95,25 +118,16 @@ export default function Projects() {
 
         {showSubsections ? (
           <div className="space-y-14">
-            {/* Academic & Professional */}
             <div>
               <h3 className="text-xl font-semibold mb-6 flex items-center gap-3">
-                <span
-                  className="inline-block w-1 h-6 rounded"
-                  style={{ backgroundColor: "var(--accent)" }}
-                />
+                <span className="inline-block w-1 h-6 rounded" style={{ backgroundColor: "var(--accent)" }} />
                 Academic &amp; Professional Projects
               </h3>
               <ProjectGrid items={mainProjects} navigate={navigate} />
             </div>
-
-            {/* Freelancing */}
             <div>
               <h3 className="text-xl font-semibold mb-6 flex items-center gap-3">
-                <span
-                  className="inline-block w-1 h-6 rounded"
-                  style={{ backgroundColor: "var(--accent)" }}
-                />
+                <span className="inline-block w-1 h-6 rounded" style={{ backgroundColor: "var(--accent)" }} />
                 Freelancing Projects
               </h3>
               <ProjectGrid items={freelancingProjects} navigate={navigate} />
