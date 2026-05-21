@@ -1,5 +1,5 @@
 import { CONFIG } from "../data/config";
-import { Mail, Phone, Linkedin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -39,15 +39,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
-                <div className="p-3 rounded-full bg-blue-50">
-                  <Linkedin style={{ color: "var(--accent)" }} />
-                </div>
-                <div>
-                  <div className="font-medium">LinkedIn</div>
-                  <div className="text-gray-700">{CONFIG.linkedin}</div>
-                </div>
-              </div>
 
             </div>
           </div>
