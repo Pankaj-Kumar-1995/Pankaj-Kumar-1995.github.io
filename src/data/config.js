@@ -1,6 +1,6 @@
 export const CONFIG = {
   name: "Pankaj Kumar",
-  title: "Business Analyst | QA & Delivery | Data & Process Optimization",
+  title: "Business Analyst | Systems Analyst | QA & Delivery | Data & Process Optimization",
   accentColor: "#3b82f6",
   location: "Glen Huntly, VIC, Australia",
   email: "pankajk1595@outlook.com",
