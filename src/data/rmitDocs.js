@@ -267,6 +267,7 @@ export const rmitDocs = {
       },
       {
         heading: "As-Is Process Steps",
+        visualType: "flowchart",
         list: [
           "1. Student identifies a WIL-related query (placement, documents, deadlines)",
           "2. Student composes and sends email to wilsupport@rmit.edu.au",
@@ -297,6 +298,7 @@ export const rmitDocs = {
       },
       {
         heading: "To-Be Process Steps",
+        visualType: "flowchart",
         list: [
           "1. Student opens the chatbot on the RMIT student portal",
           "2. Student authenticates via RMIT SSO (Azure AD) — student data loaded from SIS",
@@ -334,6 +336,7 @@ export const rmitDocs = {
       },
       {
         heading: "Architecture Layers",
+        visualType: "architecture",
         subsections: [
           {
             title: "Presentation Layer",
@@ -461,6 +464,7 @@ export const rmitDocs = {
         subsections: [
           {
             title: "Trigger: Student asks about required placement documents",
+            visualType: "conversation",
             list: [
               "Student: 'What documents do I need for my WIL placement?'",
               "Bot: 'Hi [Name]! For your WIL placement you'll need: ① A signed Host Organisation Agreement ② A completed Risk Assessment form ③ Your student insurance confirmation. Need details on any of these?'",
@@ -477,6 +481,7 @@ export const rmitDocs = {
         subsections: [
           {
             title: "Trigger: Student asks about upcoming submission deadlines",
+            visualType: "conversation",
             list: [
               "Student: 'When is my placement log due?'",
               "Bot: 'Your WIL placement log is due on 15 October 2024 — that's 12 days away. Would you like me to send a reminder email 3 days before the deadline?'",
@@ -491,6 +496,7 @@ export const rmitDocs = {
         subsections: [
           {
             title: "Trigger: Complex issue OR 2 failed chatbot responses",
+            visualType: "conversation",
             list: [
               "Student: 'My host employer hasn't received the placement confirmation from RMIT'",
               "Bot: 'This sounds like something our WIL team needs to look into directly. I'm connecting you with an advisor now — they'll have our full conversation. Typical wait: under 10 minutes during business hours.'",
@@ -506,6 +512,7 @@ export const rmitDocs = {
         subsections: [
           {
             title: "Trigger: Student input matches no QnA entry with sufficient confidence",
+            visualType: "conversation",
             list: [
               "Student: 'I'm confused about my placement'",
               "Bot: 'Happy to help — could you tell me a bit more? I can assist with: ① Placement documents and requirements ② Submission deadlines and reminders ③ Host organisation details ④ Something else (I'll connect you with a person)'",

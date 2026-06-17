@@ -262,6 +262,7 @@ export const nyc311Docs = {
       },
       {
         heading: "As-Is Process Steps",
+        visualType: "flowchart",
         list: [
           "1. NYC311 legacy reporting system generates a weekly call volume summary (every Monday AM)",
           "2. Operations analyst downloads the Excel report and performs manual trend calculations",
@@ -294,6 +295,7 @@ export const nyc311Docs = {
       },
       {
         heading: "To-Be Process Steps",
+        visualType: "flowchart",
         list: [
           "1. Azure Data Factory ingests the prior day's NYC311 call records nightly at 01:00 AM",
           "2. Data quality checks run automatically; invalid records flagged and quarantined",
@@ -332,6 +334,7 @@ export const nyc311Docs = {
       },
       {
         heading: "Architecture Layers",
+        visualType: "architecture",
         subsections: [
           {
             title: "Ingestion Layer",
@@ -438,6 +441,7 @@ export const nyc311Docs = {
         subsections: [
           {
             title: "Layout & Components",
+            visualType: "wireframe",
             list: [
               "Header: NYC311 logo, last refresh timestamp, alert indicator (green/amber/red)",
               "KPI row (top): Total predicted calls next 7 days | vs. last week % | vs. same period last year %",
@@ -454,6 +458,7 @@ export const nyc311Docs = {
         subsections: [
           {
             title: "Layout & Components",
+            visualType: "wireframe",
             list: [
               "Full-width NYC borough map with DBSCAN cluster overlays (colour intensity = predicted demand density)",
               "Cluster click → tooltip: cluster ID, top 3 call types, predicted volume, % of city total",
@@ -470,6 +475,7 @@ export const nyc311Docs = {
         subsections: [
           {
             title: "Layout & Components",
+            visualType: "wireframe",
             list: [
               "Category selector dropdown: all 40+ NYC311 service categories",
               "90-day historical vs. 7-day forecast trend chart for the selected category",
@@ -486,6 +492,7 @@ export const nyc311Docs = {
         subsections: [
           {
             title: "Layout & Components",
+            visualType: "wireframe",
             list: [
               "30/60/90-day trend KPI cards: predicted call volume with trend direction arrows",
               "YoY comparison chart: current year forecast vs. prior year actuals (bar + line combo)",
@@ -499,6 +506,7 @@ export const nyc311Docs = {
       },
       {
         heading: "Alert Management Flow",
+        visualType: "flowchart",
         list: [
           "Spike detected (≥ 15% above 90-day baseline) → Power Automate flow triggered at 05:30 AM",
           "Email sent to operations manager distribution list with: service type, borough, predicted volume, recommended staffing adjustment",
